@@ -1,0 +1,71 @@
+VER 3 0100000000000006 "Art" "1122562"
+#showtooltip Tyr's Deliverance
+/cast Holy Avenger
+/cast Rule of Law
+/cast Tyr's Deliverance
+END
+VER 3 0100000000000001 "Blessing" "135964"
+#showtooltip
+/stopcasting
+/cast Blessing of Protection
+END
+VER 3 0100000000000009 "Dawn" "461859"
+#showtooltip Light of Dawn
+/use Perfectly Preserved Cake
+/use Winged Talisman
+/cast Rule of Law
+/cast Light of Dawn
+END
+VER 3 0100000000000002 "Divine" "524354"
+#showtooltip
+/stopcasting
+/cast Divine Shield
+END
+VER 3 0100000000000003 "Divine Protectio" "524353"
+#showtooltip Divine Protection
+/use Healthstone
+/cast Divine Protection
+END
+VER 3 010000000000000C "Eye" "1272527"
+#showtooltip Eye of Tyr
+/use Ferocious Gladiator's Badge of Victory
+/cast Eye of Tyr
+END
+VER 3 0100000000000005 "Holy Shock" "135972"
+#showtooltip Holy Shock
+/cast Holy Shock
+END
+VER 3 010000000000000A "Jud" "135959"
+#showtooltip Judgment
+/cast Avenging Crusader
+/cast [@mouseover,exists,nodead,harm][@focus,exists,nodead,harm][@target] Judgment
+END
+VER 3 0100000000000004 "Lay" "135928"
+#showtooltip
+/stopcasting
+/cast Lay on Hands
+END
+VER 3 0100000000000008 "MA" "135872"
+#showtooltip Aura Mastery
+/stopcasting
+/cast Holy Avenger
+/cast Rule of Law
+/cast Aura Mastery
+END
+VER 3 010000000000000B "Strike" "135891"
+#showtooltip Crusader Strike
+/cast Avenging Crusader
+/cast Crusader Strike
+END
+VER 3 010000000000000D "Wake" "1109508"
+#showtooltip Wake of Ashes
+/use Ferocious Gladiator's Badge of Victory
+/cast Wake of Ashes
+END
+VER 3 0100000000000007 "Wrath" "135875"
+#showtooltip Avenging Wrath
+/stopcasting
+/cast Holy Avenger
+/cast Rule of Law
+/cast Avenging Wrath
+END

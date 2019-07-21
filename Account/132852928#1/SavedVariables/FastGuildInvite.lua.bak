@@ -1,0 +1,32 @@
+
+FGI_DB = {
+	["profileKeys"] = {
+		["Килком - Гордунни"] = "Килком - Гордунни",
+		["Хагаки - Гордунни"] = "Хагаки - Гордунни",
+	},
+	["global"] = {
+		["raceFilterVal"] = 121,
+		["highLimit"] = 120,
+		["minimap"] = {
+			["hide"] = false,
+		},
+		["sendMSG"] = false,
+		["backgroundRun"] = false,
+		["curMessage"] = 0,
+		["SearchType"] = 1,
+		["filtersList"] = {
+		},
+		["classFilterVal"] = 121,
+		["searchInterval"] = 5,
+		["alredySended"] = {
+		},
+		["systemMSG"] = false,
+		["lowLimit"] = 1,
+		["enableFilters"] = false,
+		["inviteType"] = 1,
+		["messageList"] = {
+		},
+		["keyBind"] = false,
+		["addonMSG"] = false,
+	},
+}

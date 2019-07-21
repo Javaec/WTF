@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "Lava" "237582"
+#showtooltip Lava Burst
+/cast Lava Burst
+END

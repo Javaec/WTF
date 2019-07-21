@@ -1,0 +1,9 @@
+WeakAurasCompanion: enabled
+BattleGroundEnemies: disabled
+AAP-Core: disabled
+CantHealYou: disabled
+REPorter: disabled
+RaiderIO: disabled
+NameplateCooldowns: disabled
+GladiatorlosSA2: disabled
+EzGInv: disabled

@@ -1,0 +1,95 @@
+VER 3 000000000000002C "/1" "SPELL_MISC_PETHEAL"
+/1 Приглашаю в гильдию новичков и вернувшихся в игру после перерыва. Общение и совместный рост. В ПМ.
+END
+VER 3 000000000000002B "/2" "SPELL_MISC_PETHEAL"
+/2 <Кинетика> 3/8М Ищем управленцев с амбициями. Любому РЛу/Ивентмейкеру будем оказывать максимальное содействие.
+END
+VER 3 0000000000000033 "/2" "132150"
+/2 Молодая гильдия "Звезда Мишлен" ведёт активный набор. Совместная прокачка, подземелья и рейды. При этом без нервов и напряга.
+END
+VER 3 000000000000002A "/4" "SPELL_MISC_PETHEAL"
+/2 Кинетика 3/8М Все в гильдии одетые мейны, твинков нет. Проводим набор. Пишите в ПМ.
+END
+VER 3 000000000000002D "/follow" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
+/follow
+END
+VER 3 0000000000000046 "10 check" "132327"
+/run for crit=1,10 do local a,_,c = GetAchievementCriteriaInfo(13079, crit); print(string.format("[%s]%10s", c and "\124cFF00FF00Yes\124r" or "\124cFF888888No\124r", a)) end 
+END
+VER 3 000000000000003A "A1" "132093"
+/rw Итнисс   soak next
+END
+VER 3 000000000000003B "A2" "132093"
+/rw Кроурей soak next
+END
+VER 3 000000000000003C "A3" "132093"
+/rw Learkh soak next
+END
+VER 3 000000000000003D "A4" "132093"
+/rw Hudaz soak next
+END
+VER 3 000000000000003E "A5" "132093"
+/rw Жидкийпорох soak next
+END
+VER 3 0000000000000044 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Противобочонковая бомба
+END
+VER 3 0000000000000032 "AFK" "134328"
+/afk Отошел
+END
+VER 3 0000000000000035 "Dung" "237551"
+/p use stuns and interrupts often as possible
+/p every pack
+END
+VER 3 0000000000000031 "EXTRA" "132102"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000042 "EXTRABUTTON" "136103"
+/click ExtraActionButton1
+END
+VER 3 0000000000000030 "Fake 15" "132091"
+/run SendChatMessage("\124cffffff00\124Hachievement:11162:"..string.gsub(UnitGUID("player"), '0x', '')..":1:2:16:17:4294967295:4294967295:4294967295:4294967295\124h[Властелин ключей]\124h\124r!","WHISPER","Common","Хагаки")
+END
+VER 3 0000000000000034 "Fake 15 EN" "132117"
+/run SendChatMessage("\124cffffff00\124Hachievement:11162:"..string.gsub(UnitGUID("player"), '0x', '')..":1:2:16:17:4294967295:4294967295:4294967295:4294967295\124h[Keystone Master]\124h\124r!","WHISPER","Common","Rockdj")
+END
+VER 3 0000000000000038 "Fake Curve" "132107"
+/run SendChatMessage("\124cffffff00\124Hachievement:11874:"..string.gsub(UnitGUID("player"), '0x', '')..":1:7:19:17:4294967295:4294967295:4294967295:4294967295\124h[Ahead of the Curve: Kil'jaeden]\124h\124r!","WHISPER","Common","Rockdj")
+END
+VER 3 000000000000002E "Fake Guldan" "1058933"
+/run SendChatMessage("\124cffffff00\124Hachievement:11195:"..string.gsub(UnitGUID("player"), '0x', '')..":1:2:19:17:4294967295:4294967295:4294967295:4294967295\124h[Герой своего времени: Гул'дан]\124h\124r!","WHISPER","Common","Rockdj")
+END
+VER 3 000000000000002F "Help" "132090"
+/с ХИЛА БЬЮТ!  ЗАКОНТРОЛЬТЕ АТАКУЮЩЕГО!
+END
+VER 3 0000000000000039 "KJ" "132099"
+/run SendChatMessage("\124cffffff00\124Hachievement:11874:"..string.gsub(UnitGUID("player"), '0x', '')..":1:8:19:17:4294967295:4294967295:4294967295:4294967295\124h[Герой своего времени: Кил'джеден]\124h\124r!","WHISPER","Common","Хагаки")
+END
+VER 3 0000000000000037 "MinusBOP" "132110"
+/cancelaura Blessing of Protection
+END
+VER 3 0000000000000016 "pull 10" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/rt pull 12
+END
+VER 3 0000000000000036 "RBG" "132094"
+/run SendChatMessage("\124cffffff00\124Hachievement:5354:"..string.gsub(UnitGUID("player"), '0x', '')..":1:3:25:17:4294967295:4294967295:4294967295:4294967295\124h[Lieutenant General]\124h\124r!","WHISPER","Common","Rockdj")
+END
+VER 3 0000000000000040 "SWITCH !!!" "458729"
+/р SWITCH !!!
+wa
+END
+VER 3 0000000000000041 "Бафы" "609882"
+/use Переналаженный концентратор Скверны
+/use Руна усиления озаренных
+END
+VER 3 000000000000003F "Луч" "1056569"
+/rw COME CLOSE - DARK ABSORB
+END
+VER 3 0000000000000045 "РЛы" "2203921"
+/2 Кинетика. 8/8Г 1/8М Большой онлайн, все одеты. Нужен мощный и добрый РЛ во 2й состав. Готовы принять РЛа или целую команду.
+END
+VER 3 0000000000000043 "Ростер" "1506451"
+/guildroster
+END

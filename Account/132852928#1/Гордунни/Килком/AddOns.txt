@@ -1,0 +1,22 @@
+ElvUI_EverySecondCounts: disabled
+SuperGuildInviteReborn: disabled
+RaiderIO: disabled
+RaiderIO_DB_EU_A: enabled
+RaiderIO_DB_EU_H_R: disabled
+CantHealYou: disabled
+Def's Sapped: enabled
+GladiatorlosSA2: disabled
+NameplateCooldowns: disabled
+WeakAuras: enabled
+DBM-Core: enabled
+AngryKeystones: disabled
+AutoFlood: enabled
+Details: enabled
+ArmoryQuickLink: disabled
+REPorter: disabled
+MethodDungeonTools: disabled
+EzGInv: disabled
+BattleGroundEnemies: disabled
+WeakAurasCompanion: enabled
+FastGuildInvite: disabled
+AAP-Core: disabled

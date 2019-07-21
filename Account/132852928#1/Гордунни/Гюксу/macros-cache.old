@@ -1,0 +1,76 @@
+VER 3 010000000000000C "Восст" "1020466"
+#showtooltip Восстановление сил
+/stopcasting
+/use Барабаны неистовства
+/use Древнее зелье маны
+/cast Восстановление сил
+/cast Купель сущности
+END
+VER 3 0100000000000004 "Вост" "SPELL_MONK_REVIVAL"
+#showtooltip
+/stopcasting
+/cast Восстановление сил
+END
+VER 3 0100000000000006 "Журавль" "ABILITY_MONK_CRANEKICK_NEW"
+#showtooltip Танцующий журавль
+/cast Путь Журавля
+/cast Танцующий журавль
+END
+VER 3 010000000000000A "Заживляющий" "136017"
+#showtooltip Заживляющий туман
+/cast Громовой чай
+/cast Заживляющий туман
+END
+VER 3 010000000000000F "Излия" "1360977"
+#showtooltip Излияние
+/cast [@mouseover, exists, nodead][] Излияние
+END
+VER 3 0100000000000012 "Имба" "1282595"
+#showtooltip Восстановление сил
+/use Барабаны неистовства
+/cast Удар Владыки Ветра
+/cast Удар Крутящегося дракона
+END
+VER 3 0100000000000003 "Кокон" "ABILITY_MONK_CHICOCOON"
+#showtooltip
+/stopcasting
+/cast Исцеляющий кокон
+END
+VER 3 0100000000000001 "Оживить" "ABILITY_MONK_VIVIFY"
+#showtooltip Громовой чай
+/use Предвидение Велена
+/use Частица оосвящения
+/cast Громовой чай
+/cast [@mouseover, exists, nodead][] Оживить
+END
+VER 3 0100000000000002 "Очищалка" "INV_MISC_BEER_06"
+#showtooltip Очищающий отвар
+/use Предвидение Велена
+/cast Очищающий отвар
+END
+VER 3 0100000000000009 "Туман" "136034"
+#showtooltip Громовой чай
+/cast Громовой чай
+/cast Окутывающий туман
+END
+VER 3 0100000000000010 "Укреп" "1616072"
+#showtooltip Укрепляющий отвар
+/use Камень здоровья
+/use Оживленный экзоскелет
+/cast Укрепляющий отвар
+END
+VER 3 0100000000000005 "Хил" "ABILITY_MONK_EXPELHARM"
+#showtooltip Устранение вреда
+/use Предвидение Велена
+/cast Устранение вреда
+END
+VER 3 010000000000000B "Ци успок" "SPELL_ARCANE_ARCANETORRENT"
+#showtooltip Выброс ци
+/cast Успокаивающий туман(Талант чести)
+/cast Выброс ци
+END
+VER 3 0100000000000011 "Щит" "775461"
+#showtooltip
+/stopcasting
+/use 13
+END
