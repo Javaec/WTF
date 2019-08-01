@@ -1,11 +1,11 @@
 
 AddOnSkinsDB = {
 	["profileKeys"] = {
-		["Хааки - Гордунни"] = "Default",
+		["Хагаи - Гордунни"] = "Хагаи - Гордунни",
 		["Секретный - Борейская тундра"] = "Default",
 		["Индиписатель - Гордунни"] = "Default",
 		["Rockdj - Kazzak"] = "Default",
-		["Хагаи - Гордунни"] = "Хагаи - Гордунни",
+		["Антипохер - Гордунни"] = "Default",
 		["Гюксу - Гордунни"] = "Default",
 		["Rockfm - Kazzak"] = "Rockfm - Kazzak",
 		["Хагакии - Гордунни"] = "Хагакии - Гордунни",
@@ -15,7 +15,7 @@ AddOnSkinsDB = {
 		["Килком - Гордунни"] = "Default",
 		["Хикоки - Гордунни"] = "Default",
 		["Рокфм - Гордунни"] = "Default",
-		["Антипохер - Гордунни"] = "Default",
+		["Хааки - Гордунни"] = "Default",
 	},
 	["profiles"] = {
 		["SHAMAN"] = {
@@ -28,11 +28,11 @@ AddOnSkinsDB = {
 		},
 		["Хагаки - Гордунни"] = {
 			["Blizzard_WorldStateCaptureBar"] = false,
-			["Blizzard_Transmogrify"] = false,
-			["BigWigs"] = true,
-			["EmbedSystem"] = true,
-			["DBMFontSize"] = 14,
 			["Omen"] = false,
+			["BigWigs"] = true,
+			["Blizzard_Transmogrify"] = false,
+			["DBMFontSize"] = 14,
+			["EmbedSystem"] = true,
 			["ChangeLogVersion"] = 4.21,
 		},
 		["Default"] = {
