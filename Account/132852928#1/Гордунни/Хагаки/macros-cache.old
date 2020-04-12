@@ -16,13 +16,17 @@ VER 3 0100000000000003 "Кокон" "ABILITY_MONK_CHICOCOON"
 END
 VER 3 0100000000000017 "Купель" "1360978"
 #showtooltip Купель сущности
-/use Медальон ужасающего гладиатора
 /cast Купель сущности
 END
 VER 3 010000000000001A "Лапа" "606551"
 #showtooltip Лапа тигра
 /cast Отвар железной шкуры
 /cast Лапа тигра
+END
+VER 3 010000000000001F "Мана" "135776"
+#showtooltip
+/use [@focus,exists] [@mouseover,exists,nodead] [@cursor,combat] [] Запретный обсидиановый коготь
+/cast [mod:alt,@player] [@mouseover,exists,nodead] [@cursor,combat] [] Сущность Сердца
 END
 VER 3 0100000000000015 "Неист" "627606"
 #showtooltip Неистовые кулаки
@@ -35,11 +39,6 @@ VER 3 0100000000000018 "Нока" "1500803"
 /use 13
 /use 14
 /cast Нокаутирующая атака
-END
-VER 3 0100000000000001 "Оживить" "ABILITY_MONK_VIVIFY"
-#showtooltip Оживить
-/cast Громовой чай
-/cast [@mouseover, exists, nodead][] Оживить
 END
 VER 3 0100000000000014 "Окутывающий" "775461"
 #showtooltip Окутывающий туман
@@ -57,8 +56,6 @@ VER 3 0100000000000019 "Плам" "615339"
 END
 VER 3 0100000000000013 "Туман" "627487"
 #showtooltip Заживляющий туман
-/use 13
-/use 14
 /cast Громовой чай
 /cast [@mouseover, exists, nodead][] Заживляющий туман
 END
@@ -74,6 +71,7 @@ VER 3 0100000000000010 "Укреп" "1616072"
 /cast Целебный эликсир
 /cast Чай дзен-концентрации
 /cast Укрепляющий отвар
+/cast Сосредоточенный огонь
 END
 VER 3 010000000000001C "Укрепляющий" "615341"
 #showtooltip Укрепляющий отвар
@@ -83,8 +81,6 @@ END
 VER 3 010000000000001E "Успокаивающий" "606550"
 #showtooltip Успокаивающий туман
 /cast Чай дзен-концентрации
-/use 13
-/use 14
 /cast [@mouseover, exists, nodead][] Успокаивающий туман
 END
 VER 3 010000000000000B "Ци успок" "SPELL_ARCANE_ARCANETORRENT"

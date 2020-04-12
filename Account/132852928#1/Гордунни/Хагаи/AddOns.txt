@@ -2,25 +2,25 @@ AheadOfTheCurve: enabled
 ArmoryQuickLink: disabled
 AngryKeystones: disabled
 AutoLog: disabled
-AutoFlood: enabled
+AutoFlood: disabled
 BGDefender: disabled
 BGCallouts: disabled
 CantHealYou: disabled
 Def's Sapped: enabled
 Details: enabled
 GarrisonMissionManager: disabled
-GladiatorlosSA2: disabled
+GladiatorlosSA2: enabled
 MrTarget: disabled
-NameplateCooldowns: disabled
+NameplateCooldowns: enabled
 Omen: disabled
 TheUndermineJournal: disabled
 WeakAuras: enabled
 SatchelScanner: disabled
 SuperGuildInvite: enabled
-REPorter: disabled
+REPorter: enabled
 LookingForGroup: disabled
 RaiderIO_DB_EU_H: disabled
-RaiderIO: disabled
+RaiderIO: enabled
 GuildExport2: enabled
 AddOnSkins: enabled
 SuperGuildInviteReborn: disabled
@@ -67,5 +67,5 @@ DBM-DMF: disabled
 RaiderIO_DB_EU_H_R: disabled
 MethodDungeonTools: disabled
 EzGInv: disabled
-FastGuildInvite: disabled
+FastGuildInvite: enabled
 AAP-Core: disabled

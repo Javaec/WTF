@@ -28,7 +28,7 @@ AF_config = {
 		["rate"] = 130,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Хааки"] = {
+	["Гордунни-Хагаи"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",
@@ -42,21 +42,21 @@ AF_config = {
 		["rate"] = 60,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Хагаки"] = {
-		["message"] = "// Набор в гильдию",
-		["channel"] = "4",
-		["idChannel"] = "4",
-		["rate"] = 90,
-		["system"] = "CHANNEL",
-	},
-	["Гордунни-Индиписатель"] = {
+	["Гордунни-Рокфм"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",
 		["rate"] = 60,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Антижив"] = {
+	["Гордунни-Хагаки"] = {
+		["message"] = "Набор в гильдию",
+		["channel"] = "4",
+		["idChannel"] = "4",
+		["rate"] = 90,
+		["system"] = "CHANNEL",
+	},
+	["Гордунни-Гюксу"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",
@@ -70,21 +70,21 @@ AF_config = {
 		["rate"] = 60,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Гюксу"] = {
+	["Гордунни-Антижив"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",
 		["rate"] = 60,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Рокфм"] = {
+	["Гордунни-Индиписатель"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",
 		["rate"] = 60,
 		["system"] = "CHANNEL",
 	},
-	["Гордунни-Хагаи"] = {
+	["Гордунни-Хааки"] = {
 		["message"] = "AutoFlood 1.2",
 		["channel"] = "1",
 		["idChannel"] = "1",

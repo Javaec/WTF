@@ -4,30 +4,62 @@ FGI_DB = {
 		["Килком - Гордунни"] = "Килком - Гордунни",
 		["Хагаки - Гордунни"] = "Хагаки - Гордунни",
 	},
+	["factionrealm"] = {
+		["Alliance - Гордунни"] = {
+			["messageList"] = {
+				"привет", -- [1]
+			},
+		},
+	},
 	["global"] = {
+		["scanFrame"] = {
+			["yOfs"] = -93.00003814697266,
+			["xOfs"] = 31.00010681152344,
+			["point"] = "LEFT",
+			["relativePoint"] = "LEFT",
+		},
 		["raceFilterVal"] = 121,
-		["highLimit"] = 120,
+		["highLimit"] = 119,
 		["minimap"] = {
 			["minimapPos"] = 240.361564897357,
-			["hide"] = false,
 		},
-		["sendMSG"] = false,
 		["backgroundRun"] = false,
+		["searchInterval"] = 5,
+		["sendMSG"] = false,
+		["filtersList"] = {
+		},
 		["curMessage"] = 0,
 		["SearchType"] = 1,
-		["addonMSG"] = false,
 		["classFilterVal"] = 121,
-		["searchInterval"] = 5,
+		["mainFrame"] = {
+			["yOfs"] = -214.0000305175781,
+			["xOfs"] = 6.000302314758301,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+		},
 		["alredySended"] = {
 		},
 		["systemMSG"] = false,
-		["lowLimit"] = 1,
-		["keyBind"] = false,
-		["inviteType"] = 1,
+		["enableFilters"] = false,
+		["inviteType"] = 3,
 		["messageList"] = {
 		},
-		["enableFilters"] = false,
-		["filtersList"] = {
+		["lowLimit"] = 21,
+	},
+	["realm"] = {
+		["Гордунни"] = {
+			["leave"] = {
+				["Горзомат"] = true,
+			},
 		},
+	},
+}
+FGI_DEBUG = {
+	["profileKeys"] = {
+		["Хагаки - Гордунни"] = "Хагаки - Гордунни",
+	},
+	["global"] = {
+		{
+		}, -- [1]
 	},
 }

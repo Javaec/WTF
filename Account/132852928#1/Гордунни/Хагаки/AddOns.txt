@@ -16,10 +16,10 @@ GuildExport2: enabled
 Details: enabled
 ExRT: enabled
 ArmoryQuickLink: disabled
-AutoFlood: enabled
+AutoFlood: disabled
 AngryKeystones: disabled
 SuperGuildInviteReborn: disabled
-RaiderIO: disabled
+RaiderIO: enabled
 RaiderIO_DB_US_H_R: disabled
 RaiderIO_DB_US_A_R: disabled
 RaiderIO_DB_TW_H_R: disabled
@@ -30,12 +30,19 @@ RaiderIO_DB_EU_A: enabled
 RaiderIO_DB_EU_H_R: disabled
 CantHealYou: disabled
 Def's Sapped: enabled
-GladiatorlosSA2: disabled
-NameplateCooldowns: disabled
-REPorter: disabled
+GladiatorlosSA2: enabled
+NameplateCooldowns: enabled
+REPorter: enabled
 MethodDungeonTools: disabled
 EzGInv: disabled
 BattleGroundEnemies: disabled
-FastGuildInvite: disabled
+FastGuildInvite: enabled
 AAP-Core: disabled
 WeakAurasCompanion: enabled
+ElvUI_VisualAuraTimers: disabled
+ElvUI_ExtraActionBars: disabled
+ElvUI_CastBarOverlay: disabled
+ElvUI_AuraBarsMovers: disabled
+ElvUI_CustomTweaks: disabled
+WeakAurasArchive: enabled
+ElvUI_OptionsUI: enabled

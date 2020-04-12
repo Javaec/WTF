@@ -9,12 +9,12 @@ WeakAurasTemplates: disabled
 WeakAurasOptions: enabled
 BGDefender: disabled
 BGCallouts: disabled
-GladiatorlosSA2: disabled
+GladiatorlosSA2: enabled
 guildexport2: enabled
 SatchelScanner: disabled
 DBM-DMF: disabled
 MonkStaggerDamageMeter: disabled
-NameplateCooldowns: disabled
+NameplateCooldowns: enabled
 PvPGrid: disabled
 SaySapped: disabled
 GarrisonMissionManager: disabled
@@ -28,11 +28,11 @@ ACU: disabled
 LargerMacroIconSelectionData: disabled
 LargerMacroIconSelection: disabled
 AutoCombatLogger: enabled
-AutoFlood: enabled
+AutoFlood: disabled
 CantHealYou: disabled
 Details: enabled
 ExRT: enabled
-REPorter: disabled
+REPorter: enabled
 ArmoryQuickLink: disabled
 AchievementCheck: disabled
 AheadOfTheCurve: enabled
@@ -85,7 +85,7 @@ DBM-Party-Legion: enabled
 DBM-WorldEvents: disabled
 LookingForGroup: disabled
 RaiderIO_DB_EU_H: disabled
-RaiderIO: disabled
+RaiderIO: enabled
 SuperGuildInviteReborn: disabled
 MasterPlanA: enabled
 MasterPlan: enabled
@@ -106,5 +106,5 @@ RaiderIO_DB_EU_H_R: disabled
 ElvUI_EverySecondCounts: disabled
 MethodDungeonTools: disabled
 EzGInv: disabled
-FastGuildInvite: disabled
+FastGuildInvite: enabled
 AAP-Core: disabled

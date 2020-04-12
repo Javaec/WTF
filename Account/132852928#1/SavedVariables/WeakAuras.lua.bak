@@ -396,23 +396,16 @@ WeakAurasSaved = {
 			[214573] = 1241154,
 		},
 	},
-	["minimap"] = {
-		["minimapPos"] = 236.437154772059,
-		["hide"] = false,
-	},
 	["login_squelch_time"] = 10,
-	["registered"] = {
-	},
 	["displays"] = {
 		["Отвар железной шкуры 2"] = {
 			["textFlags"] = "None",
 			["stacksSize"] = 39,
-			["text1FontSize"] = 26,
+			["user_x"] = 0,
 			["xOffset"] = -125.999938964844,
 			["stacksFlags"] = "None",
 			["yOffset"] = -76,
 			["anchorPoint"] = "CENTER",
-			["glowScale"] = 1,
 			["sparkRotation"] = 0,
 			["sameTexture"] = true,
 			["rotateText"] = "NONE",
@@ -422,24 +415,14 @@ WeakAurasSaved = {
 				0.5, -- [3]
 				0.5, -- [4]
 			},
-			["user_y"] = 0,
 			["icon_color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["foregroundColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
 			["barColor"] = {
 				1, -- [1]
 				0, -- [2]
@@ -448,56 +431,146 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["rotation"] = 0,
-			["text1Point"] = "BOTTOMRIGHT",
 			["sparkOffsetY"] = 0,
-			["text2FontFlags"] = "OUTLINE",
-			["authorOptions"] = {
-			},
-			["glow"] = false,
 			["crop_y"] = 0.41,
-			["icon"] = true,
-			["text2Point"] = "CENTER",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["anchorFrameType"] = "SCREEN",
 			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_Smooth",
-			["glowThickness"] = 4,
-			["cooldownTextDisabled"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["text1FontFlags"] = "THICKOUTLINE",
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
-			["text2FontSize"] = 24,
-			["sparkHidden"] = "NEVER",
-			["timerSize"] = 39,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
-			["stacksFont"] = "Friz Quadrata TT",
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
 			["compress"] = false,
-			["sparkWidth"] = 10,
 			["timerFont"] = "Friz Quadrata TT",
 			["alpha"] = 1,
-			["glowYOffset"] = 0,
-			["uid"] = "agIrJgmQzq4",
 			["config"] = {
 			},
+			["user_y"] = 0,
+			["backgroundOffset"] = 2,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["icon"] = true,
+			["parent"] = "Отвар Же",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["barInFront"] = true,
+			["stacksFont"] = "Friz Quadrata TT",
+			["desaturateBackground"] = false,
+			["cooldownSwipe"] = true,
+			["sparkWidth"] = 10,
+			["sparkRotationMode"] = "AUTO",
+			["cooldownEdge"] = false,
+			["displayTextLeft"] = "%n",
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showAlways",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["type"] = "status",
+						["unevent"] = "auto",
+						["use_showOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["unit"] = "player",
+						["realSpellName"] = "Отвар железной шкуры",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["custom_hide"] = "timed",
+						["spellName"] = 115308,
+						["duration"] = "1",
+					},
+					["untrigger"] = {
+						["showOn"] = "showAlways",
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
+			["endAngle"] = 360,
+			["internalVersion"] = 26,
+			["anchorFrameType"] = "SCREEN",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["auto"] = true,
+			["text"] = true,
 			["zoom"] = 0,
-			["text1"] = "%s",
-			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
+			["sparkHidden"] = "NEVER",
 			["crop"] = 0.41,
+			["timerSize"] = 39,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						0.0862745098039216, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "THICKOUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 26,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 32,
+			["timerFlags"] = "None",
 			["timerColor"] = {
 				1, -- [1]
 				0.0862745098039216, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["backgroundOffset"] = 2,
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -548,120 +621,20 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["borderBackdrop"] = "Blizzard Tooltip",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "Отвар Же",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["border"] = false,
-			["barInFront"] = true,
-			["displayTextLeft"] = "%n",
-			["desaturateBackground"] = false,
-			["cooldownSwipe"] = true,
-			["text1Font"] = "Friz Quadrata TT",
-			["sparkRotationMode"] = "AUTO",
-			["cooldownEdge"] = false,
-			["desaturateForeground"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["use_showOn"] = true,
-						["event"] = "Cooldown Progress (Spell)",
-						["unit"] = "player",
-						["realSpellName"] = "Отвар железной шкуры",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["custom_hide"] = "timed",
-						["spellName"] = 115308,
-						["duration"] = "1",
-					},
-					["untrigger"] = {
-						["showOn"] = "showAlways",
-					},
-				}, -- [1]
-				["activeTriggerMode"] = 1,
-			},
-			["endAngle"] = 360,
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["textSize"] = 39,
-			["text"] = true,
-			["borderInset"] = 11,
-			["stickyDuration"] = false,
-			["text2"] = "%p",
-			["glowFrequency"] = 0.25,
-			["startAngle"] = 0,
-			["height"] = 32,
 			["timer"] = true,
-			["timerFlags"] = "None",
-			["glowLines"] = 8,
-			["sparkBlendMode"] = "ADD",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["text2Containment"] = "INSIDE",
-			["customTextUpdate"] = "update",
-			["text1Color"] = {
-				1, -- [1]
-				0.0862745098039216, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["useglowColor"] = false,
-			["mirror"] = false,
+			["desaturateForeground"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
-			["glowLength"] = 10,
+			["borderInset"] = 11,
 			["borderSize"] = 16,
-			["text1Containment"] = "INSIDE",
+			["mirror"] = false,
 			["icon_side"] = "RIGHT",
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["user_x"] = 0,
+			["customTextUpdate"] = "update",
+			["startAngle"] = 0,
 			["sparkHeight"] = 30,
-			["text2Enabled"] = false,
-			["sparkColor"] = {
+			["textSize"] = 39,
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -674,43 +647,43 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["displayTextRight"] = "%p",
-			["auto"] = true,
+			["uid"] = "agIrJgmQzq4",
 			["id"] = "Отвар железной шкуры 2",
-			["borderOffset"] = 5,
-			["frameStrata"] = 1,
-			["width"] = 32,
-			["glowType"] = "buttonOverlay",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["inverse"] = false,
-			["sparkDesature"] = false,
-			["orientation"] = "VERTICAL",
-			["crop_x"] = 0.41,
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Отвар железной шкуры"] = {
-			["sparkWidth"] = 10,
-			["stacksSize"] = 12,
-			["user_x"] = 0,
-			["xOffset"] = -24.9992065429688,
-			["stacksFlags"] = "None",
-			["yOffset"] = -79.0001220703125,
-			["anchorPoint"] = "CENTER",
 			["borderColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["frameStrata"] = 1,
+			["width"] = 32,
+			["borderOffset"] = 5,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["sparkDesature"] = false,
+			["orientation"] = "VERTICAL",
+			["crop_x"] = 0.41,
+			["cooldown"] = true,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Отвар железной шкуры"] = {
+			["sparkWidth"] = 10,
+			["user_x"] = 0,
+			["xOffset"] = -24.9992065429688,
+			["yOffset"] = -79.0001220703125,
+			["anchorPoint"] = "CENTER",
+			["sparkRotation"] = 0,
 			["sameTexture"] = true,
-			["rotateText"] = "NONE",
 			["icon"] = false,
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
@@ -780,47 +753,23 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["timerColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_Smooth",
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["stacks"] = true,
 			["blendMode"] = "BLEND",
 			["texture"] = "ElvUI Norm",
-			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0,
 			["spark"] = false,
 			["compress"] = false,
-			["timerFont"] = "Friz Quadrata TT",
 			["alpha"] = 1,
-			["borderInset"] = 11,
-			["backgroundOffset"] = 2,
-			["authorOptions"] = {
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
 			["config"] = {
 			},
+			["backgroundOffset"] = 2,
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["parent"] = "Отвар Же",
-			["conditions"] = {
-			},
-			["backgroundColor"] = {
-				0.501960784313726, -- [1]
-				0.501960784313726, -- [2]
-				0.501960784313726, -- [3]
-				0.22000002861023, -- [4]
-			},
-			["borderOffset"] = 5,
-			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_Smooth",
 			["desaturateBackground"] = false,
-			["startAngle"] = 0,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkRotationMode"] = "AUTO",
-			["anchorFrameType"] = "SCREEN",
-			["displayTextLeft"] = "%p",
+			["desaturateForeground"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -846,13 +795,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["endAngle"] = 360,
-			["internalVersion"] = 16,
-			["foregroundColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["internalVersion"] = 26,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -868,23 +811,111 @@ WeakAurasSaved = {
 				},
 			},
 			["backdropInFront"] = false,
-			["text"] = true,
-			["crop"] = 0.41,
 			["stickyDuration"] = false,
-			["sparkHidden"] = "NEVER",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["subRegions"] = {
+				{
+					["type"] = "subborder",
+					["border_anchor"] = "bar",
+					["border_size"] = 16,
+					["border_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["border_visible"] = false,
+					["border_edge"] = "None",
+					["border_offset"] = 5,
+				}, -- [1]
+				{
+					["type"] = "aurabar_bar",
+				}, -- [2]
+				{
+					["text_shadowXOffset"] = 1,
+					["type"] = "subtext",
+					["text_text"] = " ",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = -1,
+					["text_selfPoint"] = "AUTO",
+					["rotateText"] = "NONE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_RIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "None",
+				}, -- [3]
+				{
+					["text_shadowXOffset"] = 1,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = -1,
+					["text_selfPoint"] = "AUTO",
+					["rotateText"] = "NONE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_LEFT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "None",
+				}, -- [4]
+				{
+					["text_shadowXOffset"] = 1,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = -1,
+					["text_selfPoint"] = "AUTO",
+					["rotateText"] = "NONE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "ICON_CENTER",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "None",
+				}, -- [5]
 			},
-			["timerSize"] = 12,
-			["textSize"] = 12,
-			["timer"] = true,
-			["timerFlags"] = "None",
-			["desaturateForeground"] = false,
+			["height"] = 23.0001068115234,
 			["sparkBlendMode"] = "ADD",
 			["backdropColor"] = {
 				1, -- [1]
@@ -893,140 +924,74 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["height"] = 23.0001068115234,
-			["sparkOffsetX"] = 0,
-			["textFlags"] = "None",
+			["authorOptions"] = {
+			},
+			["backgroundColor"] = {
+				0.501960784313726, -- [1]
+				0.501960784313726, -- [2]
+				0.501960784313726, -- [3]
+				0.22000002861023, -- [4]
+			},
+			["conditions"] = {
+			},
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["mirror"] = true,
-			["border"] = false,
-			["borderEdge"] = "None",
-			["borderSize"] = 16,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["color"] = {
+			},
 			["borderInFront"] = false,
-			["useAdjustededMax"] = false,
+			["crop"] = 0.41,
 			["icon_side"] = "LEFT",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["anchorFrameType"] = "SCREEN",
+			["sparkHeight"] = 30,
+			["user_y"] = 0,
+			["useAdjustededMax"] = false,
+			["sparkHidden"] = "NEVER",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksFont"] = "Friz Quadrata TT",
-			["sparkHeight"] = 30,
-			["sparkRotation"] = 0,
 			["auto"] = true,
-			["stacksColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayTextRight"] = " ",
-			["customTextUpdate"] = "update",
 			["id"] = "Отвар железной шкуры",
-			["user_y"] = 0,
+			["customTextUpdate"] = "update",
 			["frameStrata"] = 1,
 			["width"] = 163.999969482422,
+			["sparkOffsetX"] = 0,
 			["crop_y"] = 0.41,
-			["color"] = {
-			},
 			["inverse"] = false,
 			["sparkDesature"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["startAngle"] = 0,
 			["uid"] = "WlyasnHRKGe",
 		},
 		["Ци"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 17,
-			["authorOptions"] = {
-			},
-			["text1Font"] = "Friz Quadrata TT",
-			["glow"] = false,
-			["yOffset"] = -267.339080810547,
-			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
-			["cooldownSwipe"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.504363000392914, -- [4]
 			},
+			["yOffset"] = -267.339080810547,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Torch.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["useglowColor"] = false,
-			["xOffset"] = -56.8781127929688,
-			["text1Enabled"] = true,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["duration"] = "3",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["translateType"] = "straightTranslate",
-					["duration_type"] = "seconds",
-					["duration"] = "8",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scalex"] = 1,
-					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 125,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_translate"] = true,
-					["translateType"] = "straightTranslate",
-				},
-			},
-			["width"] = 43.1848106384277,
 			["icon"] = true,
 			["triggers"] = {
 				{
@@ -1061,44 +1026,41 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["desaturate"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
-			["text2Font"] = "Friz Quadrata TT",
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 39.2461051940918,
-			["useTooltip"] = false,
-			["glowLines"] = 8,
-			["glowXOffset"] = 0,
-			["glowFrequency"] = 0.25,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["config"] = {
-			},
-			["cooldownTextDisabled"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["text1Containment"] = "INSIDE",
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
+			["height"] = 39.2461051940918,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -1155,25 +1117,90 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1"] = "%p",
-			["text1FontFlags"] = "OUTLINE",
-			["internalVersion"] = 16,
-			["text2"] = "%p",
+			["regionType"] = "icon",
+			["useTooltip"] = false,
+			["authorOptions"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Torch.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
+					["do_sound"] = false,
+				},
+			},
+			["desaturate"] = false,
+			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["width"] = 43.1848106384277,
 			["id"] = "Ци",
-			["glowThickness"] = 4,
-			["alpha"] = 1,
-			["glowYOffset"] = 0,
-			["stickyDuration"] = false,
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["duration"] = "3",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["translateType"] = "straightTranslate",
+					["duration_type"] = "seconds",
+					["duration"] = "8",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 125,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_translate"] = true,
+					["translateType"] = "straightTranslate",
+				},
+			},
 			["uid"] = "kgAepSQIN(H",
 			["inverse"] = false,
-			["zoom"] = 0,
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["xOffset"] = -56.8781127929688,
 		},
 		["Mekkatorque Shrunk"] = {
 			["outline"] = "OUTLINE",
@@ -1237,7 +1264,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["parent"] = "Mekkatorque Announcer",
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
@@ -1375,31 +1402,12 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 		},
 		["Свет зари"] = {
-			["text2Point"] = "CENTER",
-			["desaturate"] = false,
-			["text1FontSize"] = 17,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
-			},
-			["glow"] = false,
-			["glowLength"] = 10,
+			["xOffset"] = -23.4012451171875,
 			["yOffset"] = 57.5838012695313,
 			["anchorPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
 			["cooldownSwipe"] = true,
-			["parent"] = "Holy",
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
-			["useglowColor"] = false,
-			["xOffset"] = -23.4012451171875,
-			["internalVersion"] = 16,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -1450,18 +1458,88 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["useTooltip"] = false,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["duration"] = "3",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["scalex"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["colorA"] = 1,
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["duration_type"] = "seconds",
+					["colorR"] = 1,
+				},
+				["main"] = {
+					["translateType"] = "straightTranslate",
+					["colorR"] = 1,
+					["duration"] = "8",
+					["scalex"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["scaley"] = 1,
+					["y"] = 125,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["colorB"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["translateType"] = "straightTranslate",
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["use_translate"] = true,
+					["preset"] = "slidetop",
+				},
 			},
-			["text1Point"] = "BOTTOM",
-			["text1Enabled"] = true,
-			["text2FontFlags"] = "OUTLINE",
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 39.2461051940918,
-			["glowXOffset"] = 0,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -1518,118 +1596,46 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["duration"] = "3",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["scalex"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["colorA"] = 1,
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["duration_type"] = "seconds",
-					["colorR"] = 1,
-				},
-				["main"] = {
-					["translateType"] = "straightTranslate",
-					["colorR"] = 1,
-					["duration"] = "8",
-					["scalex"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["scaley"] = 1,
-					["y"] = 125,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["colorB"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["translateType"] = "straightTranslate",
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["use_translate"] = true,
-					["preset"] = "slidetop",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["text2"] = "%p",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["stickyDuration"] = false,
-			["text2Font"] = "Friz Quadrata TT",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
+			["authorOptions"] = {
 			},
-			["text2FontSize"] = 24,
-			["text1Color"] = {
+			["selfPoint"] = "CENTER",
+			["internalVersion"] = 26,
+			["stickyDuration"] = false,
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				0.491101264953613, -- [4]
+				0.370000004768372, -- [4]
 			},
-			["alpha"] = 1,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text1FontFlags"] = "OUTLINE",
+			["zoom"] = 0,
 			["cooldownTextDisabled"] = false,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["config"] = {
+			},
 			["id"] = "Свет зари",
 			["frameStrata"] = 1,
-			["text2Enabled"] = false,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text1Font"] = "Friz Quadrata TT",
+			["width"] = 43.1848106384277,
 			["uid"] = "AtCnxMZunQz",
 			["inverse"] = false,
-			["zoom"] = 0,
-			["width"] = 43.1848106384277,
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["parent"] = "Holy",
 		},
 		["Справедливый"] = {
-			["text2Point"] = "CENTER",
-			["text1FontFlags"] = "OUTLINE",
-			["text1FontSize"] = 30,
-			["glowLength"] = 10,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["authorOptions"] = {
-			},
 			["yOffset"] = -266.076507568359,
 			["anchorPoint"] = "CENTER",
-			["glow"] = false,
 			["cooldownSwipe"] = true,
-			["xOffset"] = -114.339050292969,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -1642,27 +1648,78 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["useglowColor"] = false,
-			["icon"] = true,
-			["text1Enabled"] = false,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Справедливый приговор", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["internalVersion"] = 16,
-			["config"] = {
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
 			},
-			["glowXOffset"] = 0,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 38,
-			["alpha"] = 1,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -1717,143 +1774,37 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["glowFrequency"] = 0.25,
-			["stickyDuration"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["zoom"] = 0,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["authorOptions"] = {
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "%p",
+			["xOffset"] = -114.339050292969,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
 			["cooldownTextDisabled"] = false,
-			["text2Enabled"] = false,
-			["text2"] = "%p",
 			["auto"] = true,
-			["glowScale"] = 1,
+			["zoom"] = 0,
 			["id"] = "Справедливый",
-			["glowLines"] = 8,
-			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["width"] = 38,
-			["text2Font"] = "Friz Quadrata TT",
+			["config"] = {
+			},
 			["uid"] = "cSk9qAFSdZr",
 			["inverse"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["unevent"] = "auto",
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["buffShowOn"] = "showOnActive",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["unit"] = "player",
-						["names"] = {
-							"Справедливый приговор", -- [1]
-						},
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
+			["frameStrata"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["icon"] = true,
 		},
 		["Blue"] = {
-			["glow"] = false,
-			["text1FontSize"] = 12,
 			["xOffset"] = 160,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["url"] = "https://wago.io/AQ2esEcwQ/4",
-			["icon"] = true,
-			["text1Enabled"] = true,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["text2FontFlags"] = "OUTLINE",
-			["load"] = {
-				["use_never"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2276",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2FontSize"] = 24,
-			["zoom"] = 0,
-			["auto"] = false,
-			["glowScale"] = 1,
-			["text2Enabled"] = false,
-			["glowYOffset"] = 0,
-			["uid"] = "ChCyhEurfgi",
-			["displayIcon"] = "2437246",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
+			["url"] = "https://wago.io/AQ2esEcwQ/4",
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -1882,8 +1833,59 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 4,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_never"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2276",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1898,31 +1900,34 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["version"] = 4,
-			["height"] = 40,
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["text2Containment"] = "INSIDE",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glowLength"] = 10,
-			["text2Point"] = "CENTER",
+			["regionType"] = "icon",
+			["displayIcon"] = "2437246",
+			["desaturate"] = false,
 			["parent"] = "Mekkatorque-Helper",
-			["text2"] = "%p",
+			["cooldownEdge"] = false,
 			["cooldownTextDisabled"] = false,
-			["text1"] = "%s",
-			["text1Font"] = "Friz Quadrata TT",
+			["uid"] = "ChCyhEurfgi",
+			["zoom"] = 0,
+			["auto"] = false,
+			["semver"] = "1.0.3",
+			["id"] = "Blue",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["actions"] = {
 				["start"] = {
 					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: BLUE\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
@@ -1936,42 +1941,12 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["useglowColor"] = false,
-			["semver"] = "1.0.3",
-			["anchorFrameType"] = "SCREEN",
-			["id"] = "Blue",
-			["authorOptions"] = {
-			},
-			["frameStrata"] = 1,
-			["width"] = 40,
-			["text2Font"] = "Friz Quadrata TT",
-			["desaturate"] = false,
-			["inverse"] = false,
-			["config"] = {
-			},
-			["conditions"] = {
-			},
-			["alpha"] = 1,
-			["glowBorder"] = false,
 		},
 		["Вирус 2"] = {
-			["glow"] = false,
-			["text1FontFlags"] = "OUTLINE",
-			["text1FontSize"] = 30,
 			["xOffset"] = -205.784606933594,
-			["text2Point"] = "CENTER",
-			["authorOptions"] = {
-			},
 			["yOffset"] = 127.999938964844,
 			["anchorPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["cooldownSwipe"] = true,
-			["glowLength"] = 10,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -1984,9 +1959,30 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["useglowColor"] = false,
-			["icon"] = true,
-			["text1Enabled"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["names"] = {
+							"Эндемический вирус", -- [1]
+						},
+						["spellIds"] = {
+							279662, -- [1]
+						},
+						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["debuffType"] = "HARMFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -2002,22 +1998,38 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["internalVersion"] = 16,
-			["config"] = {
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						0, -- [2]
+						0.215686274509804, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 54.1533508300781,
-			["alpha"] = 1,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2066,106 +2078,47 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["glowFrequency"] = 0.25,
-			["glowLines"] = 8,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.215686274509804, -- [3]
-				1, -- [4]
-			},
-			["text1Font"] = "Friz Quadrata TT",
-			["glowThickness"] = 4,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["zoom"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["glowXOffset"] = 0,
-			["text1"] = "%s",
-			["text2"] = "%p",
-			["text2Enabled"] = false,
+			["authorOptions"] = {
+			},
 			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Вирус 2",
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["width"] = 68.9228744506836,
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "lS)hQywVjYJ",
-			["inverse"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["names"] = {
-							"Эндемический вирус", -- [1]
-						},
-						["spellIds"] = {
-							279662, -- [1]
-						},
-						["buffShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["debuffType"] = "HARMFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Маначай"] = {
-			["text2Point"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontSize"] = 40,
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["zoom"] = 0,
+			["auto"] = true,
+			["desaturate"] = false,
+			["id"] = "Вирус 2",
+			["width"] = 68.9228744506836,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["config"] = {
+			},
+			["uid"] = "lS)hQywVjYJ",
+			["inverse"] = false,
+			["frameStrata"] = 1,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["icon"] = true,
-			["xOffset"] = -76.9234008789063,
+		},
+		["Маначай"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 113.984680175781,
 			["anchorPoint"] = "CENTER",
-			["glow"] = false,
 			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2191,13 +2144,8 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["glowLength"] = 10,
-			["text1Enabled"] = true,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["internalVersion"] = 16,
-			["config"] = {
-			},
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2212,18 +2160,38 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 40,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["anchorFrameType"] = "SCREEN",
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 64,
-			["alpha"] = 1,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2278,43 +2246,37 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["glowFrequency"] = 0.25,
-			["text2Enabled"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glowThickness"] = 4,
-			["keepAspectRatio"] = false,
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text2"] = "%p",
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
-			["text1Font"] = "Friz Quadrata TT",
-			["text1"] = "%p",
-			["zoom"] = 0,
-			["glowYOffset"] = 0,
+			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
+			["xOffset"] = -76.9234008789063,
+			["authorOptions"] = {
+			},
 			["cooldownTextDisabled"] = false,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["zoom"] = 0,
 			["id"] = "Маначай",
-			["glowLines"] = 8,
-			["frameStrata"] = 1,
 			["width"] = 64,
-			["text2Font"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["config"] = {
+			},
 			["uid"] = "u(feVJFtq6Z",
 			["inverse"] = false,
-			["useglowColor"] = false,
+			["frameStrata"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 		},
 		["Mekkatorque In-Vehicle PlayerName Announcer"] = {
 			["outline"] = "OUTLINE",
@@ -2368,7 +2330,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["xOffset"] = 0,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["semver"] = "1.0.0",
 			["selfPoint"] = "BOTTOM",
 			["id"] = "Mekkatorque In-Vehicle PlayerName Announcer",
@@ -2415,36 +2377,13 @@ WeakAurasSaved = {
 			},
 		},
 		["Маначч"] = {
-			["glow"] = false,
-			["text1FontSize"] = 17,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.170000016689301, -- [4]
-			},
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text2Point"] = "CENTER",
-			["yOffset"] = -27.0934448242188,
-			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
-			["cooldownSwipe"] = true,
 			["authorOptions"] = {
 			},
+			["yOffset"] = -27.0934448242188,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
-			["useglowColor"] = false,
-			["xOffset"] = -0.7548828125,
-			["useTooltip"] = false,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Enabled"] = true,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\hurricane.ogg",
@@ -2492,18 +2431,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["useTooltip"] = false,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["duration"] = "3",
+					["y"] = 90,
+					["x"] = 0,
+					["colorA"] = 1,
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["duration_type"] = "seconds",
+					["colorR"] = 1,
+				},
+				["main"] = {
+					["type"] = "none",
+					["translateType"] = "straightTranslate",
+					["duration"] = "8",
+					["scalex"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["scaley"] = 1,
+					["y"] = 125,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["colorB"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["colorR"] = 1,
+				},
+				["finish"] = {
+					["y"] = 75,
+					["type"] = "none",
+					["translateType"] = "straightTranslate",
+					["duration_type"] = "seconds",
+					["use_translate"] = true,
+					["preset"] = "slidetop",
+				},
 			},
-			["text1Point"] = "BOTTOM",
-			["alpha"] = 1,
-			["text2FontFlags"] = "OUTLINE",
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 200,
-			["text2Font"] = "Friz Quadrata TT",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2561,150 +2571,43 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glowXOffset"] = 0,
-			["glowFrequency"] = 0.25,
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["duration"] = "3",
-					["y"] = 90,
-					["x"] = 0,
-					["colorA"] = 1,
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["duration_type"] = "seconds",
-					["colorR"] = 1,
-				},
-				["main"] = {
-					["type"] = "none",
-					["translateType"] = "straightTranslate",
-					["duration"] = "8",
-					["scalex"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["scaley"] = 1,
-					["y"] = 125,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["colorB"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["colorR"] = 1,
-				},
-				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["translateType"] = "straightTranslate",
-					["duration_type"] = "seconds",
-					["use_translate"] = true,
-					["preset"] = "slidetop",
-				},
-			},
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["config"] = {
-			},
-			["internalVersion"] = 16,
-			["text2Color"] = {
+			["regionType"] = "icon",
+			["internalVersion"] = 26,
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.170000016689301, -- [4]
 			},
-			["regionType"] = "icon",
-			["desaturate"] = false,
-			["glowYOffset"] = 0,
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["glowLines"] = 8,
-			["text1"] = "%p",
-			["text2"] = "%p",
-			["text1Font"] = "Friz Quadrata TT",
+			["icon"] = true,
+			["stickyDuration"] = false,
 			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["id"] = "Маначч",
-			["text1Containment"] = "INSIDE",
-			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["alpha"] = 1,
 			["width"] = 200,
-			["text1FontFlags"] = "OUTLINE",
+			["frameStrata"] = 1,
 			["uid"] = "oqDSbGk0)Tx",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
-			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["xOffset"] = -0.7548828125,
 		},
 		["Green"] = {
-			["glow"] = false,
-			["text1FontSize"] = 12,
 			["authorOptions"] = {
 			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["url"] = "https://wago.io/AQ2esEcwQ/4",
-			["icon"] = true,
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["text2FontFlags"] = "OUTLINE",
-			["load"] = {
-				["use_never"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2276",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2FontSize"] = 24,
-			["text2"] = "%p",
-			["auto"] = false,
-			["glowScale"] = 1,
-			["text2Enabled"] = false,
-			["glowYOffset"] = 0,
-			["config"] = {
-			},
-			["displayIcon"] = "2437247",
-			["parent"] = "Mekkatorque-Helper",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
+			["url"] = "https://wago.io/AQ2esEcwQ/4",
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2733,8 +2636,76 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["version"] = 4,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_never"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2276",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["parent"] = "Mekkatorque-Helper",
+			["regionType"] = "icon",
+			["displayIcon"] = "2437247",
+			["actions"] = {
+				["start"] = {
+					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: GREEN\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
+					["do_custom"] = true,
+				},
+				["init"] = {
+					["custom"] = "",
+				},
+				["finish"] = {
+					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", nil)",
+					["do_custom"] = true,
+				},
+			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2749,55 +2720,20 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["version"] = 4,
-			["height"] = 40,
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["text2Containment"] = "INSIDE",
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Point"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glowLength"] = 10,
-			["alpha"] = 1,
-			["cooldownTextDisabled"] = false,
-			["text1"] = "%s",
-			["uid"] = "RQqtmoECkXs",
-			["actions"] = {
-				["start"] = {
-					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: GREEN\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
-					["do_custom"] = true,
-				},
-				["init"] = {
-					["custom"] = "",
-				},
-				["finish"] = {
-					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", nil)",
-					["do_custom"] = true,
-				},
-			},
-			["useglowColor"] = false,
 			["semver"] = "1.0.3",
-			["width"] = 40,
+			["config"] = {
+			},
+			["zoom"] = 0,
+			["auto"] = false,
+			["cooldownTextDisabled"] = false,
 			["id"] = "Green",
-			["text1Containment"] = "INSIDE",
-			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text1Enabled"] = true,
-			["xOffset"] = 80,
+			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
+			["uid"] = "RQqtmoECkXs",
 			["inverse"] = false,
-			["text1Color"] = {
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -2805,35 +2741,17 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["zoom"] = 0,
-			["glowBorder"] = false,
+			["cooldownEdge"] = false,
+			["xOffset"] = 80,
 		},
 		["Путь Журавля"] = {
-			["text2Point"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["text1FontSize"] = 17,
-			["xOffset"] = 19,
-			["glow"] = false,
-			["glowLength"] = 10,
-			["yOffset"] = 5.99993896484375,
-			["anchorPoint"] = "CENTER",
-			["parent"] = "Monk PVP",
-			["cooldownSwipe"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.800000011920929, -- [4]
-			},
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["useglowColor"] = false,
 			["authorOptions"] = {
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
+			["yOffset"] = 5.99993896484375,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -2877,20 +2795,8 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["zoom"] = 0,
-			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
-			["internalVersion"] = 16,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 32,
-			["glowXOffset"] = 0,
-			["glowLines"] = 8,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -2940,25 +2846,38 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["glowFrequency"] = 0.25,
-			["glowThickness"] = 4,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["desaturate"] = false,
-			["text1Enabled"] = true,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
+			["height"] = 32,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -2995,16 +2914,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_pvptalent"] = true,
 				["pvptalent"] = {
 					["single"] = 11,
 					["multi"] = {
 						[11] = true,
-					},
-				},
-				["use_pvptalent"] = true,
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
 					},
 				},
 				["race"] = {
@@ -3016,30 +2935,34 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["regionType"] = "icon",
+			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["parent"] = "Monk PVP",
+			["xOffset"] = 19,
+			["desaturate"] = false,
+			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
+			["auto"] = true,
 			["config"] = {
 			},
-			["text2FontSize"] = 24,
-			["text1Font"] = "Friz Quadrata TT",
-			["alpha"] = 1,
-			["text1"] = "%p",
-			["anchorFrameType"] = "SCREEN",
-			["text1FontFlags"] = "OUTLINE",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
 			["id"] = "Путь Журавля",
-			["text2Enabled"] = false,
-			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["width"] = 32,
-			["useTooltip"] = false,
+			["frameStrata"] = 1,
 			["uid"] = "Fnlc0x0KQ0k",
 			["inverse"] = false,
-			["text2"] = "%p",
-			["glowYOffset"] = 0,
+			["useTooltip"] = false,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["selfPoint"] = "CENTER",
 		},
 		["Monk PVP"] = {
 			["backdropColor"] = {
@@ -3121,7 +3044,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "NeIzTeyU2Ir",
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["conditions"] = {
 			},
 			["load"] = {
@@ -3250,7 +3173,7 @@ WeakAurasSaved = {
 			["customTextUpdate"] = "event",
 			["cooldownEdge"] = false,
 			["useglowColor"] = false,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3295,20 +3218,20 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["custom_hide"] = "custom",
 						["type"] = "custom",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["dynamicDuration"] = false,
-						["custom"] = "function(event,...)\n    if event == \"CHAT_MSG_WHISPER\" then\n        msg = ((...))\n        local matched = string.find(msg,\"MH: \")\n        \n        \n        \n        if matched then\n            aura_env.name  = string.gsub(msg,\"MH:\",\"\")\n            aura_env.name = string.gsub(aura_env.name,\"BLUE\",\"|cff003fffBlue|r\")\n            aura_env.name = string.gsub(aura_env.name,\"PURPLE\",\"|cffc300ffPurple|r\")\n            aura_env.name = string.gsub(aura_env.name,\"RED\",\"|cffff0c00Red|r\")\n            aura_env.name = string.gsub(aura_env.name,\"GREEN\",\"|cff12db00Green|r\")\n            aura_env.name = string.gsub(aura_env.name,\"YELLOW\",\"|cffefd300Yellow|r\")\n            return true\n        end\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["event"] = "Health",
 						["names"] = {
 						},
+						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(event,...)\n    if event == \"CHAT_MSG_WHISPER\" then\n        msg = ((...))\n        local matched = string.find(msg,\"MH: \")\n        \n        \n        \n        if matched then\n            aura_env.name  = string.gsub(msg,\"MH:\",\"\")\n            aura_env.name = string.gsub(aura_env.name,\"BLUE\",\"|cff003fffBlue|r\")\n            aura_env.name = string.gsub(aura_env.name,\"PURPLE\",\"|cffc300ffPurple|r\")\n            aura_env.name = string.gsub(aura_env.name,\"RED\",\"|cffff0c00Red|r\")\n            aura_env.name = string.gsub(aura_env.name,\"GREEN\",\"|cff12db00Green|r\")\n            aura_env.name = string.gsub(aura_env.name,\"YELLOW\",\"|cffefd300Yellow|r\")\n            return true\n        end\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["event"] = "Health",
+						["unit"] = "player",
 						["customDuration"] = "",
 						["customName"] = "function()\nreturn aura_env.name\nend",
 						["spellIds"] = {
 						},
 						["customIcon"] = "\n\n\n",
 						["events"] = "CHAT_MSG_WHISPER,ENCOUNTER_START, ENCOUNTER_END, PLAYER, PLAYER_REGEN_ENABLED,UNIT_EXITED_VEHICLE",
-						["subeventPrefix"] = "SPELL",
+						["dynamicDuration"] = false,
 						["custom_type"] = "event",
 						["debuffType"] = "HELPFUL",
 					},
@@ -3356,10 +3279,13 @@ WeakAurasSaved = {
 			["parent"] = "Mekkatorque-Helper",
 		},
 		["Неизбеж"] = {
-			["glow"] = false,
-			["text1FontFlags"] = "OUTLINE",
-			["text1FontSize"] = 30,
-			["glowLength"] = 10,
+			["authorOptions"] = {
+			},
+			["yOffset"] = 127.999938964844,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -3368,21 +3294,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 127.999938964844,
-			["anchorPoint"] = "CENTER",
-			["text2Point"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3406,9 +3317,8 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["xOffset"] = -205.784606933594,
-			["text1Enabled"] = true,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3423,22 +3333,38 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["keepAspectRatio"] = false,
-			["config"] = {
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						0, -- [2]
+						0.215686274509804, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["internalVersion"] = 16,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["width"] = 68.9228744506836,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 54.1533508300781,
-			["text2Enabled"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -3488,67 +3414,39 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["glowFrequency"] = 0.25,
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.215686274509804, -- [3]
-				1, -- [4]
-			},
-			["stickyDuration"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["zoom"] = 0,
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
-			["glowThickness"] = 4,
-			["text1"] = "%s",
-			["text2"] = "%p",
-			["glowYOffset"] = 0,
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Неизбеж",
-			["glowLines"] = 8,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
-			["uid"] = "H0wvhQeNi4y",
-			["inverse"] = false,
-			["useglowColor"] = false,
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Аниг"] = {
-			["glow"] = false,
-			["text1FontFlags"] = "OUTLINE",
-			["text1FontSize"] = 30,
-			["glowLength"] = 10,
-			["authorOptions"] = {
-			},
 			["xOffset"] = -205.784606933594,
-			["yOffset"] = 127.999938964844,
-			["anchorPoint"] = "CENTER",
-			["text2Point"] = "CENTER",
-			["cooldownSwipe"] = true,
+			["stickyDuration"] = false,
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["zoom"] = 0,
+			["id"] = "Неизбеж",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 68.9228744506836,
+			["config"] = {
+			},
+			["uid"] = "H0wvhQeNi4y",
+			["inverse"] = false,
+			["alpha"] = 1,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+		},
+		["Аниг"] = {
+			["authorOptions"] = {
+			},
+			["yOffset"] = 127.999938964844,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -3582,66 +3480,41 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["icon"] = true,
-			["text1Enabled"] = true,
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["useglowColor"] = false,
-			["config"] = {
-			},
-			["glowXOffset"] = 0,
-			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 54.1533508300781,
-			["alpha"] = 1,
-			["glowLines"] = 8,
 			["selfPoint"] = "CENTER",
-			["glowFrequency"] = 0.25,
-			["text1Containment"] = "INSIDE",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.215686274509804, -- [3]
-				1, -- [4]
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						0, -- [2]
+						0.215686274509804, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["glowThickness"] = 4,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["zoom"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["text2FontSize"] = 24,
-			["desaturate"] = false,
-			["text1"] = "%s",
-			["text2"] = "%p",
+			["height"] = 54.1533508300781,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -3692,49 +3565,54 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["regionType"] = "icon",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["cooldownTextDisabled"] = false,
+			["xOffset"] = -205.784606933594,
+			["icon"] = true,
+			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Аниг",
-			["text2Enabled"] = false,
-			["frameStrata"] = 1,
-			["width"] = 68.9228744506836,
-			["internalVersion"] = 16,
-			["uid"] = "vwfpw6xHpbz",
-			["inverse"] = false,
-			["text2Font"] = "Friz Quadrata TT",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Дознание"] = {
-			["text2Point"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontSize"] = 30,
-			["glowLength"] = 10,
-			["glow"] = false,
-			["authorOptions"] = {
-			},
-			["yOffset"] = -265.092346191406,
-			["anchorPoint"] = "CENTER",
-			["xOffset"] = -14.8927612304688,
-			["cooldownSwipe"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["id"] = "Аниг",
+			["width"] = 68.9228744506836,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["config"] = {
+			},
+			["uid"] = "vwfpw6xHpbz",
+			["inverse"] = false,
+			["frameStrata"] = 1,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["desaturate"] = false,
+		},
+		["Дознание"] = {
+			["xOffset"] = -14.8927612304688,
+			["yOffset"] = -265.092346191406,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["icon"] = true,
-			["useglowColor"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3759,42 +3637,8 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Enabled"] = false,
-			["config"] = {
-			},
-			["glowXOffset"] = 0,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
-			["width"] = 40,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 40,
-			["frameStrata"] = 1,
-			["glowLines"] = 8,
-			["stickyDuration"] = false,
-			["glowFrequency"] = 0.25,
-			["glowYOffset"] = 0,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["zoom"] = 0,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3809,10 +3653,38 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["text2FontSize"] = 24,
-			["desaturate"] = false,
-			["text1"] = "%p",
-			["cooldownTextDisabled"] = false,
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -3865,16 +3737,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text2"] = "%p",
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["cooldownTextDisabled"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Дознание",
-			["text2Enabled"] = false,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "d4r3caeyajG",
-			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\AddOns\\ElvUI\\media\\sounds\\awwcrap.ogg",
@@ -3885,18 +3760,27 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["id"] = "Дознание",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["config"] = {
+			},
+			["uid"] = "d4r3caeyajG",
+			["inverse"] = false,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["desaturate"] = false,
 		},
 		["Purple"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 12,
 			["authorOptions"] = {
 			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/AQ2esEcwQ/4",
 			["actions"] = {
 				["start"] = {
@@ -3912,51 +3796,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["text2FontFlags"] = "OUTLINE",
-			["load"] = {
-				["use_never"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2276",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2FontSize"] = 24,
-			["text2"] = "%p",
-			["auto"] = false,
-			["glowScale"] = 1,
-			["alpha"] = 1,
-			["glowYOffset"] = 0,
-			["uid"] = "2XO0BtbtiQT",
-			["displayIcon"] = "2437248",
-			["parent"] = "Mekkatorque-Helper",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3980,8 +3819,59 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 4,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_never"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2276",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3996,70 +3886,45 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["version"] = 4,
-			["height"] = 40,
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["text2Containment"] = "INSIDE",
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glowLength"] = 10,
-			["glow"] = false,
+			["regionType"] = "icon",
+			["displayIcon"] = "2437248",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0,
+			["desaturate"] = false,
+			["cooldownEdge"] = false,
 			["cooldownTextDisabled"] = false,
-			["text1"] = "%s",
+			["uid"] = "2XO0BtbtiQT",
+			["zoom"] = 0,
+			["auto"] = false,
+			["semver"] = "1.0.3",
+			["id"] = "Purple",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
-			["icon"] = true,
-			["useglowColor"] = false,
-			["semver"] = "1.0.3",
-			["anchorFrameType"] = "SCREEN",
-			["id"] = "Purple",
-			["xOffset"] = 40,
-			["frameStrata"] = 1,
-			["width"] = 40,
-			["desaturate"] = false,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["inverse"] = false,
-			["text2Enabled"] = false,
+			["xOffset"] = 40,
 			["conditions"] = {
 			},
-			["text1Enabled"] = true,
-			["glowBorder"] = false,
+			["icon"] = true,
+			["parent"] = "Mekkatorque-Helper",
 		},
 		["Испеп"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 17,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.370000004768372, -- [4]
 			},
-			["glowLines"] = 8,
-			["glow"] = false,
 			["yOffset"] = -266.354614257813,
 			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
 			["cooldownSwipe"] = true,
-			["xOffset"] = -177.000732421875,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["icon"] = true,
@@ -4096,9 +3961,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["authorOptions"] = {
-			},
-			["text2Font"] = "Friz Quadrata TT",
+			["useTooltip"] = false,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -4149,34 +4012,38 @@ WeakAurasSaved = {
 					["preset"] = "slidetop",
 				},
 			},
-			["glowYOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\wilhelm.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-			},
-			["useglowColor"] = false,
 			["desaturate"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["text2"] = "%p",
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 39.2461051940918,
-			["useTooltip"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -4233,96 +4100,51 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glowXOffset"] = 0,
-			["glowFrequency"] = 0.25,
-			["selfPoint"] = "CENTER",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["config"] = {
-			},
-			["stickyDuration"] = false,
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text1Containment"] = "INSIDE",
-			["width"] = 43.1848106384277,
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["text1Font"] = "Friz Quadrata TT",
-			["text1"] = "%p",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Испеп",
-			["zoom"] = 0,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 16,
-			["uid"] = "nc4yLIOObzC",
-			["inverse"] = false,
-			["frameStrata"] = 1,
-			["text1Enabled"] = true,
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Гнев"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 17,
-			["xOffset"] = -58.8472290039063,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["glow"] = false,
-			["yOffset"] = -268.323883056641,
-			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
-			["cooldownSwipe"] = true,
 			["authorOptions"] = {
 			},
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
+			["internalVersion"] = 26,
+			["stickyDuration"] = false,
+			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
+			["auto"] = true,
+			["width"] = 43.1848106384277,
+			["id"] = "Испеп",
+			["config"] = {
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["uid"] = "nc4yLIOObzC",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RingingPhone.ogg",
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\wilhelm.ogg",
 					["do_sound"] = true,
-				},
-				["init"] = {
-					["do_custom"] = false,
 				},
 				["finish"] = {
 					["do_glow"] = false,
 					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
 					["do_sound"] = false,
 				},
+				["init"] = {
+					["do_custom"] = false,
+				},
 			},
-			["useglowColor"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
+			["conditions"] = {
 			},
-			["useTooltip"] = false,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["internalVersion"] = 16,
+			["cooldown"] = true,
+			["xOffset"] = -177.000732421875,
+		},
+		["Гнев"] = {
+			["authorOptions"] = {
+			},
+			["yOffset"] = -268.323883056641,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
 			["icon"] = true,
 			["triggers"] = {
 				{
@@ -4357,18 +4179,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["duration"] = "3",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["translateType"] = "straightTranslate",
+					["duration_type"] = "seconds",
+					["duration"] = "8",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 125,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_translate"] = true,
+					["translateType"] = "straightTranslate",
+				},
 			},
-			["text1Point"] = "BOTTOM",
-			["alpha"] = 1,
-			["text2FontFlags"] = "OUTLINE",
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 39.2461051940918,
-			["text1Enabled"] = true,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -4425,94 +4318,46 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glowXOffset"] = 0,
-			["glowFrequency"] = 0.25,
-			["animation"] = {
+			["regionType"] = "icon",
+			["useTooltip"] = false,
+			["xOffset"] = -58.8472290039063,
+			["actions"] = {
 				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["duration"] = "3",
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RingingPhone.ogg",
+					["do_sound"] = true,
 				},
-				["main"] = {
-					["colorR"] = 1,
-					["translateType"] = "straightTranslate",
-					["duration_type"] = "seconds",
-					["duration"] = "8",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scalex"] = 1,
-					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 125,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
+				["init"] = {
+					["do_custom"] = false,
 				},
 				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_translate"] = true,
-					["translateType"] = "straightTranslate",
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
+					["do_sound"] = false,
 				},
 			},
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
+			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["alpha"] = 1,
+			["id"] = "Гнев",
 			["config"] = {
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["desaturate"] = false,
-			["glowYOffset"] = 0,
-			["text2FontSize"] = 24,
-			["text2Enabled"] = false,
-			["glowLines"] = 8,
-			["text1"] = "%p",
-			["cooldownTextDisabled"] = false,
-			["glowThickness"] = 4,
-			["zoom"] = 0,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Гнев",
-			["text1Containment"] = "INSIDE",
 			["frameStrata"] = 1,
+			["width"] = 43.1848106384277,
 			["anchorFrameType"] = "SCREEN",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["uid"] = "V(CCxZQYf6g",
 			["inverse"] = false,
-			["text2"] = "%p",
-			["width"] = 43.1848106384277,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.370000004768372, -- [4]
+			},
 		},
 		["Отвар Же"] = {
 			["backdropColor"] = {
@@ -4593,7 +4438,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "b7CTVqT7mcB",
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["conditions"] = {
 			},
 			["load"] = {
@@ -4647,31 +4492,17 @@ WeakAurasSaved = {
 			["scale"] = 1,
 		},
 		["Ауры"] = {
-			["glow"] = false,
-			["stickyDuration"] = false,
-			["text1FontSize"] = 17,
-			["parent"] = "Holy",
-			["text2Point"] = "CENTER",
-			["xOffset"] = 32.7213134765625,
-			["yOffset"] = -107.831085205078,
-			["anchorPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
-			["cooldownSwipe"] = true,
-			["glowLength"] = 10,
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["useglowColor"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.370000004768372, -- [4]
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
+			["yOffset"] = -107.831085205078,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -4721,19 +4552,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["text2"] = "%p",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
 			["useTooltip"] = false,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 39.2461051940918,
 			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["duration"] = "3",
+					["y"] = 90,
+					["x"] = 0,
+					["colorA"] = 1,
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["duration_type"] = "seconds",
+					["colorR"] = 1,
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["duration"] = "8",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["scaley"] = 1,
+					["y"] = 125,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["colorA"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["translateType"] = "straightTranslate",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["type"] = "none",
+					["translateType"] = "straightTranslate",
+					["preset"] = "slidetop",
+					["use_translate"] = true,
+					["duration_type"] = "seconds",
+				},
+			},
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 39.2461051940918,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -4790,123 +4691,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["duration"] = "3",
-					["y"] = 90,
-					["x"] = 0,
-					["colorA"] = 1,
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["duration_type"] = "seconds",
-					["colorR"] = 1,
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["duration"] = "8",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scalex"] = 1,
-					["alpha"] = 0,
-					["scaley"] = 1,
-					["y"] = 125,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["colorA"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["translateType"] = "straightTranslate",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["translateType"] = "straightTranslate",
-					["preset"] = "slidetop",
-					["use_translate"] = true,
-					["duration_type"] = "seconds",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["glowThickness"] = 4,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "Friz Quadrata TT",
-			["desaturate"] = false,
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
+			["parent"] = "Holy",
+			["internalVersion"] = 26,
+			["xOffset"] = 32.7213134765625,
+			["desaturate"] = false,
+			["authorOptions"] = {
 			},
-			["text2FontSize"] = 24,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["alpha"] = 1,
-			["text1"] = "%p",
-			["width"] = 43.1848106384277,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["config"] = {
+			},
 			["id"] = "Ауры",
-			["text2Enabled"] = false,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 43.1848106384277,
 			["anchorFrameType"] = "SCREEN",
-			["text1Enabled"] = true,
 			["uid"] = "psFulU8ha3n",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
-			["glowYOffset"] = 0,
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["selfPoint"] = "CENTER",
 		},
 		["Тревожный"] = {
-			["glow"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontSize"] = 30,
-			["glowLength"] = 10,
 			["xOffset"] = -205.784606933594,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["yOffset"] = 127.999938964844,
 			["anchorPoint"] = "CENTER",
-			["text2Point"] = "CENTER",
 			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -4940,13 +4754,8 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["icon"] = true,
-			["text1Enabled"] = true,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["text2Font"] = "Friz Quadrata TT",
-			["config"] = {
-			},
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -4961,18 +4770,38 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						0, -- [2]
+						0.215686274509804, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 30,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["width"] = 68.9228744506836,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 54.1533508300781,
-			["text2Enabled"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -5021,43 +4850,33 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["internalVersion"] = 16,
-			["glowFrequency"] = 0.25,
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
+			["regionType"] = "icon",
+			["color"] = {
 				1, -- [1]
-				0, -- [2]
-				0.215686274509804, -- [3]
+				1, -- [2]
+				1, -- [3]
 				1, -- [4]
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["glowLines"] = 8,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2"] = "%p",
-			["frameStrata"] = 1,
-			["text2FontSize"] = 24,
-			["glowThickness"] = 4,
-			["text1"] = "%s",
-			["zoom"] = 0,
-			["glowYOffset"] = 0,
 			["cooldownTextDisabled"] = false,
+			["authorOptions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["desaturate"] = false,
 			["id"] = "Тревожный",
-			["stickyDuration"] = false,
-			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["keepAspectRatio"] = false,
+			["frameStrata"] = 1,
+			["width"] = 68.9228744506836,
+			["config"] = {
+			},
 			["uid"] = "yqB3INL5j7L",
 			["inverse"] = false,
-			["useglowColor"] = false,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["icon"] = true,
 		},
 		["Holy"] = {
 			["backdropColor"] = {
@@ -5117,7 +4936,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["yOffset"] = 0,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["scale"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -5281,7 +5100,7 @@ WeakAurasSaved = {
 			["version"] = 2,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 80,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -5394,26 +5213,28 @@ WeakAurasSaved = {
 			["displayIcon"] = 1394887,
 		},
 		["Правосудие"] = {
-			["text2Point"] = "CENTER",
-			["desaturate"] = false,
-			["text1FontSize"] = 17,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
-			},
-			["glow"] = false,
-			["xOffset"] = 60.2908325195313,
+			["parent"] = "Holy",
 			["yOffset"] = 24.1070556640625,
 			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
 			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\rocket.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_message"] = false,
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5447,88 +5268,41 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["parent"] = "Holy",
-			["text1Enabled"] = true,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["duration"] = "3",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["scalex"] = 1,
-				},
-				["main"] = {
-					["type"] = "none",
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["duration_type"] = "seconds",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration"] = "8",
-					["alpha"] = 0,
-					["colorB"] = 1,
-					["y"] = 125,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["colorR"] = 1,
-				},
-				["finish"] = {
-					["y"] = 75,
-					["translateType"] = "straightTranslate",
-					["preset"] = "slidetop",
-					["duration_type"] = "seconds",
-					["use_translate"] = true,
-					["type"] = "none",
-				},
-			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\rocket.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["useglowColor"] = false,
-			["zoom"] = 0,
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
 			["useTooltip"] = false,
-			["text2FontFlags"] = "OUTLINE",
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 39.2461051940918,
-			["glowXOffset"] = 0,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -5585,51 +5359,83 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["glowFrequency"] = 0.25,
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["stickyDuration"] = false,
-			["internalVersion"] = 16,
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["glowLines"] = 8,
+			["authorOptions"] = {
+			},
+			["icon"] = true,
+			["xOffset"] = 60.2908325195313,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.370000004768372, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["duration"] = "3",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["scalex"] = 1,
+				},
+				["main"] = {
+					["type"] = "none",
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["duration_type"] = "seconds",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration"] = "8",
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 125,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["colorR"] = 1,
+				},
+				["finish"] = {
+					["y"] = 75,
+					["translateType"] = "straightTranslate",
+					["preset"] = "slidetop",
+					["duration_type"] = "seconds",
+					["use_translate"] = true,
+					["type"] = "none",
+				},
+			},
+			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
 			["config"] = {
 			},
-			["text2FontSize"] = 24,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text2Enabled"] = false,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2"] = "%p",
-			["auto"] = true,
-			["glowScale"] = 1,
 			["id"] = "Правосудие",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 43.1848106384277,
-			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
 			["uid"] = "ZrMXGhirVnb",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
-			["anchorFrameType"] = "SCREEN",
+			["stickyDuration"] = false,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["internalVersion"] = 26,
 		},
 		["Mekkatorque Announcer"] = {
 			["backdropColor"] = {
@@ -5708,7 +5514,7 @@ WeakAurasSaved = {
 			["scale"] = 1,
 			["borderInset"] = 11,
 			["version"] = 2,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["config"] = {
 			},
 			["conditions"] = {
@@ -5731,56 +5537,18 @@ WeakAurasSaved = {
 			["uid"] = "DPuOwErX8)8",
 		},
 		["Пронзающий взгляд v 0.2"] = {
-			["glow"] = false,
-			["text1FontSize"] = 12,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["width"] = 70,
-			["text2Point"] = "CENTER",
 			["yOffset"] = -11.8243408203125,
 			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
 			["cooldownSwipe"] = true,
-			["xOffset"] = 310.561889648438,
 			["customTextUpdate"] = "event",
 			["cooldownEdge"] = false,
 			["icon"] = true,
-			["useglowColor"] = false,
-			["authorOptions"] = {
-			},
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["conditions"] = {
-			},
-			["text2"] = "%p",
-			["actions"] = {
-				["start"] = {
-					["message"] = "БЕГИ!",
-					["do_loop"] = false,
-					["do_sound"] = true,
-					["message_type"] = "RAID",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
-					["sound_channel"] = "Master",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "TOPRIGHT",
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5841,9 +5609,41 @@ WeakAurasSaved = {
 				}, -- [2]
 				["activeTriggerMode"] = 1,
 			},
-			["text2FontFlags"] = "OUTLINE",
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%c",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_TOPRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 70,
-			["cooldownTextDisabled"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -5904,12 +5704,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Enabled"] = true,
-			["glowFrequency"] = 0.25,
-			["glowXOffset"] = 0,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -5924,65 +5721,58 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["config"] = {
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text1Font"] = "Friz Quadrata TT",
 			["stickyDuration"] = false,
-			["text2FontSize"] = 24,
-			["glowYOffset"] = 0,
-			["text2Enabled"] = false,
-			["text1"] = "%c",
-			["glowLines"] = 8,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["conditions"] = {
 			},
+			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
 			["auto"] = false,
-			["glowScale"] = 1,
-			["id"] = "Пронзающий взгляд v 0.2",
-			["internalVersion"] = 16,
-			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["id"] = "Пронзающий взгляд v 0.2",
+			["config"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 70,
+			["actions"] = {
+				["start"] = {
+					["message"] = "БЕГИ!",
+					["do_loop"] = false,
+					["do_sound"] = true,
+					["message_type"] = "RAID",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
+					["sound_channel"] = "Master",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["uid"] = "eqOrXQ8(O92",
 			["inverse"] = false,
-			["alpha"] = 1,
-			["desaturate"] = false,
+			["frameStrata"] = 1,
 			["displayIcon"] = 236407,
 			["cooldown"] = false,
-			["glowBorder"] = false,
+			["xOffset"] = 310.561889648438,
 		},
 		["Путь Журавля Prog"] = {
-			["text2Point"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["text1FontSize"] = 32,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-				0.170000016689301, -- [4]
-			},
-			["glow"] = false,
-			["xOffset"] = 72.0001831054688,
-			["yOffset"] = 20.9998168945313,
-			["anchorPoint"] = "CENTER",
-			["parent"] = "Monk PVP",
-			["cooldownSwipe"] = true,
 			["authorOptions"] = {
 			},
+			["yOffset"] = 20.9998168945313,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -6015,34 +5805,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["glowLength"] = 10,
-			["text1Enabled"] = true,
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
+					["translateType"] = "straightTranslate",
+					["duration"] = "3",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["scalex"] = 1,
 				},
-				["init"] = {
-					["do_custom"] = false,
+				["main"] = {
+					["translateType"] = "straightTranslate",
+					["colorR"] = 1,
+					["duration"] = "8",
+					["scalex"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 125,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
 				},
 				["finish"] = {
-					["do_glow"] = false,
+					["y"] = 75,
+					["translateType"] = "straightTranslate",
+					["preset"] = "slidetop",
+					["duration_type"] = "seconds",
+					["use_translate"] = true,
+					["type"] = "none",
 				},
 			},
-			["useglowColor"] = false,
-			["internalVersion"] = 16,
 			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.400000035762787, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 32,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["text2Font"] = "Friz Quadrata TT",
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 66,
-			["glowXOffset"] = 0,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6097,123 +5942,45 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["duration"] = "3",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["scalex"] = 1,
-				},
-				["main"] = {
-					["translateType"] = "straightTranslate",
-					["colorR"] = 1,
-					["duration"] = "8",
-					["scalex"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["colorB"] = 1,
-					["y"] = 125,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["translateType"] = "straightTranslate",
-					["preset"] = "slidetop",
-					["duration_type"] = "seconds",
-					["use_translate"] = true,
-					["type"] = "none",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["cooldownTextDisabled"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.400000035762787, -- [4]
-			},
-			["desaturate"] = false,
-			["useTooltip"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
+			["icon"] = true,
+			["parent"] = "Monk PVP",
+			["xOffset"] = 72.0001831054688,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+				0.170000016689301, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["glowThickness"] = 4,
-			["text2Enabled"] = false,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text1FontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
+			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["config"] = {
+			},
 			["id"] = "Путь Журавля Prog",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text1Font"] = "Friz Quadrata TT",
+			["width"] = 66,
 			["uid"] = "oQR4wA(fXhu",
 			["inverse"] = false,
-			["text2"] = "%p",
-			["width"] = 66,
+			["desaturate"] = false,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["useTooltip"] = false,
 		},
 		["Прок"] = {
-			["text2Point"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontSize"] = 40,
-			["authorOptions"] = {
-			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["glow"] = false,
 			["yOffset"] = 113.000244140625,
 			["anchorPoint"] = "CENTER",
-			["xOffset"] = -136.000122070313,
 			["cooldownSwipe"] = true,
-			["glowLength"] = 10,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -6251,39 +6018,41 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["icon"] = true,
-			["text2Font"] = "Friz Quadrata TT",
-			["glowXOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["internalVersion"] = 16,
-			["config"] = {
-			},
-			["text1Enabled"] = true,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 40,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 64,
-			["frameStrata"] = 1,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -6336,60 +6105,68 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["anchorFrameType"] = "SCREEN",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text2Enabled"] = false,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text2"] = "%p",
-			["text1Font"] = "Friz Quadrata TT",
-			["text2FontSize"] = 24,
-			["keepAspectRatio"] = false,
-			["text1"] = "%p",
-			["cooldownTextDisabled"] = false,
-			["desaturate"] = false,
+			["xOffset"] = -136.000122070313,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["cooldownTextDisabled"] = false,
 			["id"] = "Прок",
-			["text1Containment"] = "INSIDE",
-			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["width"] = 64,
-			["selfPoint"] = "CENTER",
+			["config"] = {
+			},
 			["uid"] = "FAEgOZsAY85",
 			["inverse"] = false,
-			["useglowColor"] = false,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["desaturate"] = false,
 		},
 		["Шок"] = {
-			["glow"] = false,
-			["stickyDuration"] = false,
-			["text1FontSize"] = 17,
-			["glowLength"] = 10,
-			["text2Point"] = "CENTER",
-			["xOffset"] = -68.6934814453125,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.370000004768372, -- [4]
+			},
 			["yOffset"] = 13.2761840820313,
 			["anchorPoint"] = "CENTER",
-			["parent"] = "Holy",
 			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun2.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -6423,43 +6200,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
-			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["animation"] = {
 				["start"] = {
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun2.ogg",
-					["do_sound"] = true,
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["duration"] = "3",
 				},
-				["init"] = {
-					["do_custom"] = false,
+				["main"] = {
+					["type"] = "none",
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["duration"] = "8",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 125,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["translateType"] = "straightTranslate",
 				},
 				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
-					["do_sound"] = false,
+					["y"] = 75,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_translate"] = true,
+					["translateType"] = "straightTranslate",
 				},
 			},
-			["useglowColor"] = false,
-			["text2"] = "%p",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["text2Font"] = "Friz Quadrata TT",
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 39.2461051940918,
-			["keepAspectRatio"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6516,123 +6339,37 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["duration"] = "3",
-				},
-				["main"] = {
-					["type"] = "none",
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["duration"] = "8",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scalex"] = 1,
-					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 125,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["translateType"] = "straightTranslate",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_translate"] = true,
-					["translateType"] = "straightTranslate",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["desaturate"] = false,
-			["useTooltip"] = false,
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
-			},
-			["text2FontSize"] = 24,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text2Enabled"] = false,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Holy",
+			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["xOffset"] = -68.6934814453125,
+			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["config"] = {
+			},
 			["id"] = "Шок",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 43.1848106384277,
-			["text1Enabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["uid"] = "rFUE77VBJ(0",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
-			["anchorFrameType"] = "SCREEN",
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Озарение"] = {
-			["text2Point"] = "CENTER",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontSize"] = 40,
 			["authorOptions"] = {
 			},
-			["glow"] = false,
-			["xOffset"] = -136.000122070313,
+		},
+		["Озарение"] = {
+			["authorOptions"] = {
+			},
 			["yOffset"] = 113.000244140625,
 			["anchorPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["cooldownSwipe"] = true,
-			["glowLength"] = 10,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["actions"] = {
@@ -6671,39 +6408,41 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["useglowColor"] = false,
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["text1Enabled"] = true,
-			["config"] = {
-			},
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 40,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["text1Point"] = "BOTTOM",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
 			["height"] = 64,
-			["frameStrata"] = 1,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6754,75 +6493,59 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["glowFrequency"] = 0.25,
-			["stickyDuration"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
+			["regionType"] = "icon",
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["zoom"] = 0,
-			["selfPoint"] = "CENTER",
-			["text2FontSize"] = 24,
-			["alpha"] = 1,
-			["text1"] = "%p",
 			["cooldownTextDisabled"] = false,
-			["width"] = 64,
-			["text2"] = "%p",
+			["stickyDuration"] = false,
+			["xOffset"] = -136.000122070313,
+			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["icon"] = true,
 			["id"] = "Озарение",
-			["glowLines"] = 8,
-			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["text2Font"] = "Friz Quadrata TT",
+			["frameStrata"] = 1,
+			["width"] = 64,
+			["config"] = {
+			},
 			["uid"] = "39h9IUkAPn1",
 			["inverse"] = false,
-			["icon"] = true,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Рыц"] = {
-			["glow"] = false,
-			["stickyDuration"] = false,
-			["text1FontSize"] = 17,
-			["glowLength"] = 10,
-			["text2Point"] = "CENTER",
-			["xOffset"] = -21.4320068359375,
-			["yOffset"] = -106.846435546875,
-			["anchorPoint"] = "CENTER",
-			["parent"] = "Holy",
-			["cooldownSwipe"] = true,
-			["authorOptions"] = {
-			},
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\shipswhistle.ogg",
-					["do_sound"] = true,
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
-				["init"] = {
-					["do_custom"] = false,
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["do_glow"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
-					["do_sound"] = false,
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
+		},
+		["Рыц"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.370000004768372, -- [4]
+			},
+			["yOffset"] = -106.846435546875,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -6856,30 +6579,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
-			},
-			["text1Enabled"] = true,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["useglowColor"] = false,
-			["text2"] = "%p",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOM",
 			["useTooltip"] = false,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 39.2461051940918,
 			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["duration"] = "3",
+				},
+				["main"] = {
+					["translateType"] = "straightTranslate",
+					["colorR"] = 1,
+					["duration"] = "8",
+					["scalex"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 125,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_translate"] = true,
+					["translateType"] = "straightTranslate",
+				},
+			},
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 39.2461051940918,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6936,126 +6718,53 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["duration"] = "3",
-				},
-				["main"] = {
-					["translateType"] = "straightTranslate",
-					["colorR"] = 1,
-					["duration"] = "8",
-					["scalex"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 125,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_translate"] = true,
-					["translateType"] = "straightTranslate",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["desaturate"] = false,
-			["internalVersion"] = 16,
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
-			},
-			["text2FontSize"] = 24,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text2Enabled"] = false,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Holy",
+			["internalVersion"] = 26,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["xOffset"] = -21.4320068359375,
+			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
-			["glowScale"] = 1,
+			["config"] = {
+			},
 			["id"] = "Рыц",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 43.1848106384277,
-			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
 			["uid"] = "tViMKbnzMmz",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
-			["anchorFrameType"] = "SCREEN",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\shipswhistle.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_message"] = false,
+					["sound"] = "Interface\\Addons\\Details\\sounds\\sound_gun3.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Чай"] = {
-			["text2Point"] = "CENTER",
-			["stickyDuration"] = false,
-			["text1FontSize"] = 17,
-			["xOffset"] = 14.999267578125,
-			["glow"] = false,
-			["glowLength"] = 10,
-			["yOffset"] = 94.9993896484375,
-			["anchorPoint"] = "CENTER",
 			["authorOptions"] = {
 			},
+		},
+		["Чай"] = {
+			["parent"] = "Monk PVP",
+			["yOffset"] = 94.9993896484375,
+			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.370000004768372, -- [4]
-			},
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
-			["useglowColor"] = false,
-			["parent"] = "Monk PVP",
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 				},
@@ -7101,19 +6810,89 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["text1Enabled"] = true,
-			["desaturate"] = false,
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "straightTranslate",
+					["duration"] = "3",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["use_alpha"] = false,
+					["type"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorR"] = 1,
+					["y"] = 90,
+					["x"] = 0,
+					["duration_type"] = "seconds",
+					["preset"] = "slidetop",
+					["use_scale"] = false,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["scalex"] = 1,
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["translateType"] = "straightTranslate",
+					["duration"] = "8",
+					["scalex"] = 1,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 125,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["x"] = 0,
+					["scaley"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["type"] = "none",
+				},
+				["finish"] = {
+					["y"] = 75,
+					["translateType"] = "straightTranslate",
+					["preset"] = "slidetop",
+					["duration_type"] = "seconds",
+					["use_translate"] = true,
+					["type"] = "none",
+				},
 			},
-			["text1Point"] = "BOTTOM",
-			["internalVersion"] = 16,
-			["text2FontFlags"] = "OUTLINE",
+			["stickyDuration"] = false,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%p",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						0.491101264953613, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOM",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 17,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
 			["height"] = 55,
-			["glowXOffset"] = 0,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -7170,122 +6949,44 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "straightTranslate",
-					["duration"] = "3",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["use_alpha"] = false,
-					["type"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorR"] = 1,
-					["y"] = 90,
-					["x"] = 0,
-					["duration_type"] = "seconds",
-					["preset"] = "slidetop",
-					["use_scale"] = false,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["scalex"] = 1,
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["translateType"] = "straightTranslate",
-					["duration"] = "8",
-					["scalex"] = 1,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["colorB"] = 1,
-					["y"] = 125,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["x"] = 0,
-					["scaley"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["type"] = "none",
-				},
-				["finish"] = {
-					["y"] = 75,
-					["translateType"] = "straightTranslate",
-					["preset"] = "slidetop",
-					["duration_type"] = "seconds",
-					["use_translate"] = true,
-					["type"] = "none",
-				},
-			},
-			["glowFrequency"] = 0.25,
-			["zoom"] = 0,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.491101264953613, -- [4]
-			},
-			["text1Containment"] = "INSIDE",
-			["useTooltip"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
-			["glowLines"] = 8,
-			["config"] = {
-			},
-			["text2FontSize"] = 24,
-			["text1Font"] = "Friz Quadrata TT",
-			["alpha"] = 1,
-			["text1"] = "%p",
-			["glowYOffset"] = 0,
-			["text1FontFlags"] = "OUTLINE",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Чай",
-			["text2Enabled"] = false,
-			["frameStrata"] = 1,
-			["width"] = 55,
-			["glowThickness"] = 4,
-			["uid"] = "p)A8HbrBAEW",
-			["inverse"] = false,
-			["text2"] = "%p",
-			["anchorFrameType"] = "SCREEN",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["glowBorder"] = false,
-		},
-		["Лапа"] = {
-			["text2Point"] = "CENTER",
-			["desaturate"] = false,
-			["text1FontSize"] = 24,
-			["xOffset"] = -18.8316040039063,
-			["glow"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				0.400000035762787, -- [4]
+				0.370000004768372, -- [4]
 			},
-			["yOffset"] = 127.769470214844,
-			["anchorPoint"] = "CENTER",
-			["glowLength"] = 10,
-			["cooldownSwipe"] = true,
+			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
 			["authorOptions"] = {
 			},
+			["xOffset"] = 14.999267578125,
+			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["config"] = {
+			},
+			["id"] = "Чай",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 55,
+			["anchorFrameType"] = "SCREEN",
+			["uid"] = "p)A8HbrBAEW",
+			["inverse"] = false,
+			["desaturate"] = false,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["icon"] = true,
+		},
+		["Лапа"] = {
+			["xOffset"] = -18.8316040039063,
+			["yOffset"] = 127.769470214844,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
 			["icon"] = true,
-			["useglowColor"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -7315,51 +7016,54 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["text1Enabled"] = true,
-			["glowXOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "ODYXZi8l5pv",
+			["internalVersion"] = 26,
 			["keepAspectRatio"] = false,
-			["text1Containment"] = "OUTSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
 			},
-			["text1Point"] = "RIGHT",
-			["glowYOffset"] = 0,
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 41.3538818359375,
-			["alpha"] = 1,
-			["glowLines"] = 8,
-			["internalVersion"] = 16,
-			["glowFrequency"] = 0.25,
 			["stickyDuration"] = false,
-			["text2Containment"] = "INSIDE",
-			["glowType"] = "buttonOverlay",
-			["text1Font"] = "Friz Quadrata TT",
-			["anchorFrameType"] = "SCREEN",
-			["glowThickness"] = 4,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_RIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 24,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
 			},
-			["regionType"] = "icon",
-			["text2"] = "%p",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["text1FontFlags"] = "OUTLINE",
-			["text1"] = "%s",
-			["zoom"] = 0,
+			["height"] = 41.3538818359375,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -7410,30 +7114,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
 			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["glowScale"] = 1,
-			["id"] = "Лапа",
-			["text2Enabled"] = false,
-			["frameStrata"] = 1,
-			["width"] = 44.3073616027832,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["config"] = {
-			},
-			["inverse"] = false,
+			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\AirHorn.ogg",
@@ -7444,66 +7129,37 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["zoom"] = 0,
+			["auto"] = true,
+			["desaturate"] = false,
+			["id"] = "Лапа",
+			["width"] = 44.3073616027832,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["uid"] = "ODYXZi8l5pv",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["frameStrata"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["glowBorder"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.400000035762787, -- [4]
+			},
 		},
 		["Yellow"] = {
-			["glow"] = false,
-			["text1FontSize"] = 12,
 			["authorOptions"] = {
 			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["url"] = "https://wago.io/AQ2esEcwQ/4",
-			["icon"] = true,
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["text2FontFlags"] = "OUTLINE",
-			["load"] = {
-				["use_never"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2276",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2FontSize"] = 24,
-			["zoom"] = 0,
-			["auto"] = false,
-			["glowScale"] = 1,
-			["text2Enabled"] = false,
-			["glowYOffset"] = 0,
-			["config"] = {
-			},
-			["displayIcon"] = "2437250",
-			["parent"] = "Mekkatorque-Helper",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
+			["url"] = "https://wago.io/AQ2esEcwQ/4",
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -7532,8 +7188,76 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 4,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_never"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2276",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["xOffset"] = 120,
+			["regionType"] = "icon",
+			["displayIcon"] = "2437250",
+			["parent"] = "Mekkatorque-Helper",
+			["actions"] = {
+				["start"] = {
+					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: YELLOW\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
+					["do_custom"] = true,
+				},
+				["init"] = {
+					["custom"] = "",
+				},
+				["finish"] = {
+					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", nil)",
+					["do_custom"] = true,
+				},
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7548,64 +7272,29 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["version"] = 4,
-			["height"] = 40,
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["text2Containment"] = "INSIDE",
-			["text1Font"] = "Friz Quadrata TT",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["zoom"] = 0,
+			["config"] = {
 			},
-			["text2Point"] = "CENTER",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["semver"] = "1.0.3",
+			["id"] = "Yellow",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["alpha"] = 1,
+			["uid"] = "e7QGjewFhF2",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["glowLength"] = 10,
-			["text2"] = "%p",
-			["cooldownTextDisabled"] = false,
-			["text1"] = "%s",
-			["uid"] = "e7QGjewFhF2",
-			["actions"] = {
-				["start"] = {
-					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: YELLOW\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
-					["do_custom"] = true,
-				},
-				["init"] = {
-					["custom"] = "",
-				},
-				["finish"] = {
-					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", nil)",
-					["do_custom"] = true,
-				},
-			},
-			["useglowColor"] = false,
-			["semver"] = "1.0.3",
-			["width"] = 40,
-			["id"] = "Yellow",
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["text1Enabled"] = true,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["inverse"] = false,
-			["alpha"] = 1,
 			["conditions"] = {
 			},
-			["xOffset"] = 120,
-			["glowBorder"] = false,
+			["cooldownEdge"] = false,
+			["desaturate"] = false,
 		},
 		["Mekkatorque-Helper"] = {
 			["backdropColor"] = {
@@ -7678,7 +7367,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["yOffset"] = -162.73828125,
-			["internalVersion"] = 16,
+			["internalVersion"] = 26,
 			["semver"] = "1.0.3",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "Mekkatorque-Helper",
@@ -7711,58 +7400,13 @@ WeakAurasSaved = {
 			},
 		},
 		["Red"] = {
-			["text2Point"] = "CENTER",
-			["text1FontSize"] = 12,
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["url"] = "https://wago.io/AQ2esEcwQ/4",
-			["icon"] = true,
-			["text2Font"] = "Friz Quadrata TT",
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "INSIDE",
-			["glowColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Point"] = "BOTTOMRIGHT",
-			["text2FontFlags"] = "OUTLINE",
-			["load"] = {
-				["use_never"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2276",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["glowType"] = "buttonOverlay",
-			["glowThickness"] = 4,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text2FontSize"] = 24,
-			["text2"] = "%p",
-			["auto"] = false,
-			["glowScale"] = 1,
-			["alpha"] = 1,
-			["glowYOffset"] = 0,
-			["uid"] = "3dA)TQN)dIz",
-			["displayIcon"] = "2437249",
-			["parent"] = "Mekkatorque-Helper",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
+			["url"] = "https://wago.io/AQ2esEcwQ/4",
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -7793,8 +7437,68 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 16,
-			["glowXOffset"] = 0,
+			["internalVersion"] = 26,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 4,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["type"] = "subtext",
+					["text_text"] = "%s",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_shadowYOffset"] = 0,
+					["text_selfPoint"] = "AUTO",
+					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["rotateText"] = "NONE",
+				}, -- [1]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_never"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2276",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["desaturate"] = false,
+			["regionType"] = "icon",
+			["displayIcon"] = "2437249",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7809,36 +7513,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["stickyDuration"] = false,
-			["version"] = 4,
-			["height"] = 40,
-			["glowLines"] = 8,
-			["glowFrequency"] = 0.25,
-			["text2Containment"] = "INSIDE",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glow"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["glowLength"] = 10,
-			["zoom"] = 0,
+			["cooldownEdge"] = false,
+			["semver"] = "1.0.3",
+			["uid"] = "3dA)TQN)dIz",
 			["cooldownTextDisabled"] = false,
-			["text1"] = "%s",
-			["text1Font"] = "Friz Quadrata TT",
+			["auto"] = false,
+			["zoom"] = 0,
+			["id"] = "Red",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["parent"] = "Mekkatorque-Helper",
 			["actions"] = {
 				["start"] = {
 					["custom"] = "aura_env.region:SetScript(\"OnMouseDown\", function(self,...) \n        SendChatMessage(\"MH: RED\",\"WHISPER\",_,UnitName(\"target\"))\nend)",
@@ -7853,24 +7546,17 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["useglowColor"] = false,
-			["semver"] = "1.0.3",
-			["anchorFrameType"] = "SCREEN",
-			["id"] = "Red",
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["width"] = 40,
-			["text1Enabled"] = true,
-			["authorOptions"] = {
-			},
-			["inverse"] = false,
-			["config"] = {
-			},
-			["conditions"] = {
-			},
-			["text2Enabled"] = false,
-			["glowBorder"] = false,
 		},
+	},
+	["lastArchiveClear"] = 1581506636,
+	["minimap"] = {
+		["minimapPos"] = 253.1062146664804,
+		["hide"] = false,
+	},
+	["lastUpgrade"] = 1581506651,
+	["dbVersion"] = 26,
+	["clearOldHistory"] = 30,
+	["registered"] = {
 	},
 	["frame"] = {
 		["xOffset"] = 18.7071533203125,

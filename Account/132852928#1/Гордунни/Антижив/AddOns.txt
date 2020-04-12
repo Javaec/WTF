@@ -3,8 +3,13 @@ Details: enabled
 BattleGroundEnemies: disabled
 AAP-Core: disabled
 CantHealYou: disabled
-REPorter: disabled
-RaiderIO: disabled
-NameplateCooldowns: disabled
-GladiatorlosSA2: disabled
+REPorter: enabled
+RaiderIO: enabled
+NameplateCooldowns: enabled
+GladiatorlosSA2: enabled
 EzGInv: disabled
+ExRT: enabled
+WeakAuras: enabled
+FastGuildInvite: enabled
+SuperGuildInviteReborn: disabled
+AutoFlood: disabled
